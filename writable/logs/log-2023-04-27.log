@@ -1,0 +1,433 @@
+INFO - 2023-04-27 02:12:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 02:12:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 02:12:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 02:12:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 02:12:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 02:13:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 02:13:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 02:14:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 02:14:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 02:15:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 02:15:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 02:16:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 02:16:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 02:16:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 02:16:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 02:17:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 02:19:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 02:22:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-27 02:22:41 --> Undefined variable $pedido
+in APPPATH/Views/entregador.php on line 13.
+ 1 APPPATH/Views/entregador.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pedido', 'APPPATH/Views/entregador.php', 13)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/entregador.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('entregador', [], true)
+ 5 APPPATH/Controllers/Entregador.php(67): view('entregador', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Entregador->entregador()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Entregador))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-27 02:23:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 02:23:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 02:23:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 02:23:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 02:24:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 02:25:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 02:31:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 02:31:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 02:33:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 02:33:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 02:35:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 02:40:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 02:45:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 02:47:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 02:47:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 02:47:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 02:50:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 02:52:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 02:54:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 02:55:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 03:12:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 03:14:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 03:24:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 03:25:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 03:25:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 03:28:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 03:29:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 03:29:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 03:32:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 03:33:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 03:33:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 03:42:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 03:42:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 03:42:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 03:42:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 03:43:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 03:43:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 03:43:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 04:07:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 04:07:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-27 04:07:33 --> Undefined array key "pedido_id"
+in APPPATH/Controllers/Admin.php on line 114.
+ 1 APPPATH/Controllers/Admin.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "pedido_id"', 'APPPATH/Controllers/Admin.php', 114)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->confirmentregadorapi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-27 04:08:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 04:08:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 04:08:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-27 15:08:04 --> mysqli_sql_exception: Duplicate entry 'asdsf@adsf' for key 'email' in /opt/lampp/htdocs/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/system/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `en...', 0)
+#1 /opt/lampp/htdocs/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `en...')
+#2 /opt/lampp/htdocs/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `en...')
+#3 /opt/lampp/htdocs/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `en...', Array, false)
+#4 /opt/lampp/htdocs/app/Controllers/Admin.php(55): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /opt/lampp/htdocs/system/CodeIgniter.php(934): App\Controllers\Admin->entregador()
+#6 /opt/lampp/htdocs/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /opt/lampp/htdocs/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/public/index.php(74): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-27 15:08:04 --> Duplicate entry 'asdsf@adsf' for key 'email'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `entregadores` (`nome`, `email`, `senha`, `cpf`, `veiculo`, `placa`) VALUES (:nome:, :email:, :senha:, :cpf:, :veiculo:, :placa:)', [...], false)
+ 2 APPPATH/Controllers/Admin.php(55): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->entregador()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-27 15:08:15 --> mysqli_sql_exception: Duplicate entry 'asdsf@adsf' for key 'email' in /opt/lampp/htdocs/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/system/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `en...', 0)
+#1 /opt/lampp/htdocs/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `en...')
+#2 /opt/lampp/htdocs/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `en...')
+#3 /opt/lampp/htdocs/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `en...', Array, false)
+#4 /opt/lampp/htdocs/app/Controllers/Admin.php(55): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /opt/lampp/htdocs/system/CodeIgniter.php(934): App\Controllers\Admin->entregador()
+#6 /opt/lampp/htdocs/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /opt/lampp/htdocs/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/public/index.php(74): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-27 15:08:15 --> Duplicate entry 'asdsf@adsf' for key 'email'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `entregadores` (`nome`, `email`, `senha`, `cpf`, `veiculo`, `placa`) VALUES (:nome:, :email:, :senha:, :cpf:, :veiculo:, :placa:)', [...], false)
+ 2 APPPATH/Controllers/Admin.php(55): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->entregador()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-27 15:08:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 15:08:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 15:08:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-27 15:08:29 --> mysqli_sql_exception: Duplicate entry 'asdsf@adsf' for key 'email' in /opt/lampp/htdocs/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/system/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `en...', 0)
+#1 /opt/lampp/htdocs/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `en...')
+#2 /opt/lampp/htdocs/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `en...')
+#3 /opt/lampp/htdocs/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `en...', Array, false)
+#4 /opt/lampp/htdocs/app/Controllers/Admin.php(55): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /opt/lampp/htdocs/system/CodeIgniter.php(934): App\Controllers\Admin->entregador()
+#6 /opt/lampp/htdocs/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /opt/lampp/htdocs/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/public/index.php(74): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-27 15:08:29 --> Duplicate entry 'asdsf@adsf' for key 'email'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `entregadores` (`nome`, `email`, `senha`, `cpf`, `veiculo`, `placa`) VALUES (:nome:, :email:, :senha:, :cpf:, :veiculo:, :placa:)', [...], false)
+ 2 APPPATH/Controllers/Admin.php(55): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->entregador()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-27 15:08:48 --> mysqli_sql_exception: Duplicate entry 'asdsf@adsf' for key 'email' in /opt/lampp/htdocs/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/system/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `en...', 0)
+#1 /opt/lampp/htdocs/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `en...')
+#2 /opt/lampp/htdocs/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `en...')
+#3 /opt/lampp/htdocs/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `en...', Array, false)
+#4 /opt/lampp/htdocs/app/Controllers/Admin.php(55): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /opt/lampp/htdocs/system/CodeIgniter.php(934): App\Controllers\Admin->entregador()
+#6 /opt/lampp/htdocs/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /opt/lampp/htdocs/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/public/index.php(74): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-27 15:08:48 --> Duplicate entry 'asdsf@adsf' for key 'email'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `entregadores` (`nome`, `email`, `senha`, `cpf`, `veiculo`, `placa`) VALUES (:nome:, :email:, :senha:, :cpf:, :veiculo:, :placa:)', [...], false)
+ 2 APPPATH/Controllers/Admin.php(55): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->entregador()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-27 15:08:48 --> mysqli_sql_exception: Duplicate entry 'asdsf@adsf' for key 'email' in /opt/lampp/htdocs/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/system/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `en...', 0)
+#1 /opt/lampp/htdocs/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `en...')
+#2 /opt/lampp/htdocs/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `en...')
+#3 /opt/lampp/htdocs/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `en...', Array, false)
+#4 /opt/lampp/htdocs/app/Controllers/Admin.php(55): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /opt/lampp/htdocs/system/CodeIgniter.php(934): App\Controllers\Admin->entregador()
+#6 /opt/lampp/htdocs/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /opt/lampp/htdocs/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/public/index.php(74): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-27 15:08:48 --> Duplicate entry 'asdsf@adsf' for key 'email'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `entregadores` (`nome`, `email`, `senha`, `cpf`, `veiculo`, `placa`) VALUES (:nome:, :email:, :senha:, :cpf:, :veiculo:, :placa:)', [...], false)
+ 2 APPPATH/Controllers/Admin.php(55): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->entregador()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-27 15:09:04 --> mysqli_sql_exception: Duplicate entry 'asdsf@adsf' for key 'email' in /opt/lampp/htdocs/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/system/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `en...', 0)
+#1 /opt/lampp/htdocs/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `en...')
+#2 /opt/lampp/htdocs/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `en...')
+#3 /opt/lampp/htdocs/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `en...', Array, false)
+#4 /opt/lampp/htdocs/app/Controllers/Admin.php(55): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /opt/lampp/htdocs/system/CodeIgniter.php(934): App\Controllers\Admin->entregador()
+#6 /opt/lampp/htdocs/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /opt/lampp/htdocs/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/public/index.php(74): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-27 15:09:04 --> Duplicate entry 'asdsf@adsf' for key 'email'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `entregadores` (`nome`, `email`, `senha`, `cpf`, `veiculo`, `placa`) VALUES (:nome:, :email:, :senha:, :cpf:, :veiculo:, :placa:)', [...], false)
+ 2 APPPATH/Controllers/Admin.php(55): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->entregador()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-27 15:09:09 --> mysqli_sql_exception: Duplicate entry 'asdsf@adsf' for key 'email' in /opt/lampp/htdocs/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/system/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `en...', 0)
+#1 /opt/lampp/htdocs/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `en...')
+#2 /opt/lampp/htdocs/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `en...')
+#3 /opt/lampp/htdocs/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `en...', Array, false)
+#4 /opt/lampp/htdocs/app/Controllers/Admin.php(55): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /opt/lampp/htdocs/system/CodeIgniter.php(934): App\Controllers\Admin->entregador()
+#6 /opt/lampp/htdocs/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /opt/lampp/htdocs/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/public/index.php(74): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-27 15:09:09 --> Duplicate entry 'asdsf@adsf' for key 'email'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `entregadores` (`nome`, `email`, `senha`, `cpf`, `veiculo`, `placa`) VALUES (:nome:, :email:, :senha:, :cpf:, :veiculo:, :placa:)', [...], false)
+ 2 APPPATH/Controllers/Admin.php(55): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->entregador()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-27 15:10:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 15:10:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 15:10:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-27 15:10:52 --> mysqli_sql_exception: Duplicate entry 'alexfb.contabil81@gmail.com' for key 'email' in /opt/lampp/htdocs/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/system/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `en...', 0)
+#1 /opt/lampp/htdocs/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `en...')
+#2 /opt/lampp/htdocs/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `en...')
+#3 /opt/lampp/htdocs/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `en...', Array, false)
+#4 /opt/lampp/htdocs/app/Controllers/Admin.php(55): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /opt/lampp/htdocs/system/CodeIgniter.php(934): App\Controllers\Admin->entregador()
+#6 /opt/lampp/htdocs/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /opt/lampp/htdocs/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/public/index.php(74): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-27 15:10:52 --> Duplicate entry 'alexfb.contabil81@gmail.com' for key 'email'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `entregadores` (`nome`, `email`, `senha`, `cpf`, `veiculo`, `placa`) VALUES (:nome:, :email:, :senha:, :cpf:, :veiculo:, :placa:)', [...], false)
+ 2 APPPATH/Controllers/Admin.php(55): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->entregador()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-27 15:10:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 15:10:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 15:10:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 15:11:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 15:11:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 15:11:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 15:11:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 15:12:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 15:12:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 15:12:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 15:13:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 15:13:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 15:13:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 15:13:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-27 15:15:19 --> Undefined array key "choice"
+in APPPATH/Controllers/Admin.php on line 100.
+ 1 APPPATH/Controllers/Admin.php(100): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "choice"', 'APPPATH/Controllers/Admin.php', 100)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->confirmentregadorapi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-27 15:15:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 15:15:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 15:15:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 15:15:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 15:15:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 15:16:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 15:17:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 15:17:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 15:17:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 15:17:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 15:17:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 15:20:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 15:20:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 15:23:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 15:23:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 15:23:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 15:23:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 15:24:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-27 15:25:56 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 3 in /opt/lampp/htdocs/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/system/Database/MySQLi/Connection.php(295): mysqli->query('UPDATE `entrega...', 0)
+#1 /opt/lampp/htdocs/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `entrega...')
+#2 /opt/lampp/htdocs/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `entrega...')
+#3 /opt/lampp/htdocs/system/Database/BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `entrega...', Array, false)
+#4 /opt/lampp/htdocs/app/Controllers/Admin.php(69): CodeIgniter\Database\BaseBuilder->update('ultimo_pedido', '')
+#5 /opt/lampp/htdocs/system/CodeIgniter.php(934): App\Controllers\Admin->entregador()
+#6 /opt/lampp/htdocs/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /opt/lampp/htdocs/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/public/index.php(74): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-27 15:25:56 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 3
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `entregadores` SET `ultimo_pedido` = :ultimo_pedido:
+WHERE `id` = :id:
+AND  IS NULL', [...], false)
+ 2 APPPATH/Controllers/Admin.php(69): CodeIgniter\Database\BaseBuilder->update('ultimo_pedido', 'ROOTPATH/public')
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->entregador()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-27 15:49:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 15:49:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 15:49:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 15:49:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 15:50:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 15:51:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 15:51:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-27 15:52:56 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 3 in /opt/lampp/htdocs/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/system/Database/MySQLi/Connection.php(295): mysqli->query('UPDATE `entrega...', 0)
+#1 /opt/lampp/htdocs/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `entrega...')
+#2 /opt/lampp/htdocs/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `entrega...')
+#3 /opt/lampp/htdocs/system/Database/BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `entrega...', Array, false)
+#4 /opt/lampp/htdocs/app/Controllers/Admin.php(69): CodeIgniter\Database\BaseBuilder->update('ultimo_pedido', '')
+#5 /opt/lampp/htdocs/system/CodeIgniter.php(934): App\Controllers\Admin->entregador()
+#6 /opt/lampp/htdocs/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /opt/lampp/htdocs/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/public/index.php(74): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-27 15:52:56 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 3
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `entregadores` SET `ultimo_pedido` = :ultimo_pedido:
+WHERE `id` = :id:
+AND  IS NULL', [...], false)
+ 2 APPPATH/Controllers/Admin.php(69): CodeIgniter\Database\BaseBuilder->update('ultimo_pedido', 'ROOTPATH/public')
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->entregador()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-27 15:53:30 --> mysqli_sql_exception: Duplicate entry 'ADM.CONTROLE.EMP@GMAIL.COM' for key 'email' in /opt/lampp/htdocs/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/system/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `en...', 0)
+#1 /opt/lampp/htdocs/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `en...')
+#2 /opt/lampp/htdocs/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `en...')
+#3 /opt/lampp/htdocs/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `en...', Array, false)
+#4 /opt/lampp/htdocs/app/Controllers/Admin.php(55): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /opt/lampp/htdocs/system/CodeIgniter.php(934): App\Controllers\Admin->entregador()
+#6 /opt/lampp/htdocs/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /opt/lampp/htdocs/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/public/index.php(74): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-27 15:53:30 --> Duplicate entry 'ADM.CONTROLE.EMP@GMAIL.COM' for key 'email'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `entregadores` (`nome`, `email`, `senha`, `cpf`, `veiculo`, `placa`) VALUES (:nome:, :email:, :senha:, :cpf:, :veiculo:, :placa:)', [...], false)
+ 2 APPPATH/Controllers/Admin.php(55): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->entregador()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-27 15:53:31 --> mysqli_sql_exception: Duplicate entry 'ADM.CONTROLE.EMP@GMAIL.COM' for key 'email' in /opt/lampp/htdocs/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/system/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `en...', 0)
+#1 /opt/lampp/htdocs/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `en...')
+#2 /opt/lampp/htdocs/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `en...')
+#3 /opt/lampp/htdocs/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `en...', Array, false)
+#4 /opt/lampp/htdocs/app/Controllers/Admin.php(55): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /opt/lampp/htdocs/system/CodeIgniter.php(934): App\Controllers\Admin->entregador()
+#6 /opt/lampp/htdocs/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /opt/lampp/htdocs/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/public/index.php(74): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-27 15:53:31 --> Duplicate entry 'ADM.CONTROLE.EMP@GMAIL.COM' for key 'email'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `entregadores` (`nome`, `email`, `senha`, `cpf`, `veiculo`, `placa`) VALUES (:nome:, :email:, :senha:, :cpf:, :veiculo:, :placa:)', [...], false)
+ 2 APPPATH/Controllers/Admin.php(55): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->entregador()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-27 15:55:36 --> mysqli_sql_exception: Duplicate entry 'ADM.CONTROLE.EMP@GMAIL.COM' for key 'email' in /opt/lampp/htdocs/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/system/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `en...', 0)
+#1 /opt/lampp/htdocs/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `en...')
+#2 /opt/lampp/htdocs/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `en...')
+#3 /opt/lampp/htdocs/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `en...', Array, false)
+#4 /opt/lampp/htdocs/app/Controllers/Admin.php(55): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /opt/lampp/htdocs/system/CodeIgniter.php(934): App\Controllers\Admin->entregador()
+#6 /opt/lampp/htdocs/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /opt/lampp/htdocs/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/public/index.php(74): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-27 15:55:36 --> Duplicate entry 'ADM.CONTROLE.EMP@GMAIL.COM' for key 'email'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `entregadores` (`nome`, `email`, `senha`, `cpf`, `veiculo`, `placa`) VALUES (:nome:, :email:, :senha:, :cpf:, :veiculo:, :placa:)', [...], false)
+ 2 APPPATH/Controllers/Admin.php(55): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->entregador()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-27 15:56:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 15:56:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 15:56:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-27 15:56:38 --> Undefined array key "choice"
+in APPPATH/Controllers/Admin.php on line 100.
+ 1 APPPATH/Controllers/Admin.php(100): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "choice"', 'APPPATH/Controllers/Admin.php', 100)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->confirmentregadorapi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-27 15:57:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 15:57:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 15:57:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 15:57:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 15:58:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 15:58:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 15:58:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 15:58:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 15:58:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 15:58:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 15:59:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 15:59:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 15:59:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-27 15:59:41 --> Undefined array key "choice"
+in APPPATH/Controllers/Admin.php on line 100.
+ 1 APPPATH/Controllers/Admin.php(100): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "choice"', 'APPPATH/Controllers/Admin.php', 100)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->confirmentregadorapi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-27 15:59:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 16:00:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 16:00:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 16:00:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 16:00:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 16:02:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 16:06:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-27 16:06:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

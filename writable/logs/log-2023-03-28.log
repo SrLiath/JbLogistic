@@ -1,0 +1,145 @@
+CRITICAL - 2023-03-28 15:54:11 --> Undefined variable $db
+in APPPATH/Views/admin.php on line 25.
+ 1 APPPATH/Views/admin.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', 'APPPATH/Views/admin.php', 25)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('admin', [], true)
+ 5 APPPATH/Controllers/Home.php(78): view('admin')
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->admin()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-28 15:55:07 --> Undefined variable $db
+in APPPATH/Views/admin.php on line 25.
+ 1 APPPATH/Views/admin.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', 'APPPATH/Views/admin.php', 25)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('admin', [], true)
+ 5 APPPATH/Controllers/Home.php(78): view('admin')
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->admin()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-28 16:10:04 --> syntax error, unexpected token "echo", expecting "," or ";"
+in APPPATH/Views/admin.php on line 43.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('admin', [], true)
+ 3 APPPATH/Controllers/Home.php(78): view('admin')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->admin()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-28 16:10:23 --> syntax error, unexpected token "echo", expecting "," or ";"
+in APPPATH/Views/admin.php on line 43.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('admin', [], true)
+ 3 APPPATH/Controllers/Home.php(78): view('admin')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->admin()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-28 16:10:47 --> Cannot use object of type stdClass as array
+in APPPATH/Views/admin.php on line 43.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('admin', [], true)
+ 4 APPPATH/Controllers/Home.php(78): view('admin')
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->admin()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-28 16:18:27 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::where()
+in APPPATH/Views/admin.php on line 66.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('admin', [], true)
+ 4 APPPATH/Controllers/Home.php(78): view('admin')
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->admin()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-28 16:19:41 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%entregue%' at line 1 in /opt/lampp/htdocs/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT * FROM p...', 0)
+#1 /opt/lampp/htdocs/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM p...')
+#2 /opt/lampp/htdocs/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM p...')
+#3 /opt/lampp/htdocs/app/Views/admin.php(66): CodeIgniter\Database\BaseConnection->query('SELECT * FROM p...')
+#4 /opt/lampp/htdocs/system/View/View.php(213): include('/opt/lampp/htdo...')
+#5 /opt/lampp/htdocs/system/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 /opt/lampp/htdocs/system/Common.php(1184): CodeIgniter\View\View->render('admin', Array, true)
+#7 /opt/lampp/htdocs/app/Controllers/Home.php(78): view('admin')
+#8 /opt/lampp/htdocs/system/CodeIgniter.php(934): App\Controllers\Home->admin()
+#9 /opt/lampp/htdocs/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 /opt/lampp/htdocs/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /opt/lampp/htdocs/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-28 16:19:41 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%entregue%' at line 1
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Views/admin.php(66): CodeIgniter\Database\BaseConnection->query('SELECT * FROM pedidos where status not like %entregue%')
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('admin', [], true)
+ 5 APPPATH/Controllers/Home.php(78): view('admin')
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->admin()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-28 16:20:01 --> mysqli_sql_exception: Unknown column 'sstatus' in 'where clause' in /opt/lampp/htdocs/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT * FROM p...', 0)
+#1 /opt/lampp/htdocs/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM p...')
+#2 /opt/lampp/htdocs/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM p...')
+#3 /opt/lampp/htdocs/app/Views/admin.php(66): CodeIgniter\Database\BaseConnection->query('SELECT * FROM p...')
+#4 /opt/lampp/htdocs/system/View/View.php(213): include('/opt/lampp/htdo...')
+#5 /opt/lampp/htdocs/system/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 /opt/lampp/htdocs/system/Common.php(1184): CodeIgniter\View\View->render('admin', Array, true)
+#7 /opt/lampp/htdocs/app/Controllers/Home.php(78): view('admin')
+#8 /opt/lampp/htdocs/system/CodeIgniter.php(934): App\Controllers\Home->admin()
+#9 /opt/lampp/htdocs/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 /opt/lampp/htdocs/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /opt/lampp/htdocs/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-28 16:20:01 --> Unknown column 'sstatus' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Views/admin.php(66): CodeIgniter\Database\BaseConnection->query('SELECT * FROM pedidos where sstatus not like entregue')
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('admin', [], true)
+ 5 APPPATH/Controllers/Home.php(78): view('admin')
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->admin()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-28 16:20:09 --> mysqli_sql_exception: Unknown column 'sstatus' in 'where clause' in /opt/lampp/htdocs/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT * FROM p...', 0)
+#1 /opt/lampp/htdocs/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM p...')
+#2 /opt/lampp/htdocs/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM p...')
+#3 /opt/lampp/htdocs/app/Views/admin.php(66): CodeIgniter\Database\BaseConnection->query('SELECT * FROM p...')
+#4 /opt/lampp/htdocs/system/View/View.php(213): include('/opt/lampp/htdo...')
+#5 /opt/lampp/htdocs/system/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 /opt/lampp/htdocs/system/Common.php(1184): CodeIgniter\View\View->render('admin', Array, true)
+#7 /opt/lampp/htdocs/app/Controllers/Home.php(78): view('admin')
+#8 /opt/lampp/htdocs/system/CodeIgniter.php(934): App\Controllers\Home->admin()
+#9 /opt/lampp/htdocs/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 /opt/lampp/htdocs/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /opt/lampp/htdocs/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-28 16:20:09 --> Unknown column 'sstatus' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Views/admin.php(66): CodeIgniter\Database\BaseConnection->query('SELECT * FROM pedidos where sstatus not like "entregue"')
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('admin', [], true)
+ 5 APPPATH/Controllers/Home.php(78): view('admin')
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->admin()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-28 17:11:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-28 17:12:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-28 17:12:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-28 17:12:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-28 17:12:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-28 17:12:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-28 17:12:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

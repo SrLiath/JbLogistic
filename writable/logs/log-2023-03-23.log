@@ -1,0 +1,455 @@
+ERROR - 2023-03-23 03:13:13 --> mysqli_sql_exception: Table 'teste.users' doesn't exist in /opt/lampp/htdocs/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT * FROM u...', 0)
+#1 /opt/lampp/htdocs/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM u...')
+#2 /opt/lampp/htdocs/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM u...')
+#3 /opt/lampp/htdocs/app/Views/apilc.php(10): CodeIgniter\Database\BaseConnection->query('SELECT * FROM u...')
+#4 /opt/lampp/htdocs/system/View/View.php(213): include('/opt/lampp/htdo...')
+#5 /opt/lampp/htdocs/system/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 /opt/lampp/htdocs/system/Common.php(1184): CodeIgniter\View\View->render('apilc', Array, true)
+#7 /opt/lampp/htdocs/app/Controllers/Home.php(25): view('apilc')
+#8 /opt/lampp/htdocs/system/CodeIgniter.php(934): App\Controllers\Home->apilc()
+#9 /opt/lampp/htdocs/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 /opt/lampp/htdocs/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /opt/lampp/htdocs/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-23 03:13:13 --> Table 'teste.users' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Views/apilc.php(10): CodeIgniter\Database\BaseConnection->query('SELECT * FROM users WHERE cpf = \'w\' AND nome = \'w\' AND email = \'w\' AND senha = \'w\'')
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/apilc.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('apilc', [], true)
+ 5 APPPATH/Controllers/Home.php(25): view('apilc')
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->apilc()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-23 03:13:21 --> mysqli_sql_exception: Table 'teste.users' doesn't exist in /opt/lampp/htdocs/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT * FROM u...', 0)
+#1 /opt/lampp/htdocs/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM u...')
+#2 /opt/lampp/htdocs/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM u...')
+#3 /opt/lampp/htdocs/app/Views/apilc.php(10): CodeIgniter\Database\BaseConnection->query('SELECT * FROM u...')
+#4 /opt/lampp/htdocs/system/View/View.php(213): include('/opt/lampp/htdo...')
+#5 /opt/lampp/htdocs/system/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 /opt/lampp/htdocs/system/Common.php(1184): CodeIgniter\View\View->render('apilc', Array, true)
+#7 /opt/lampp/htdocs/app/Controllers/Home.php(25): view('apilc')
+#8 /opt/lampp/htdocs/system/CodeIgniter.php(934): App\Controllers\Home->apilc()
+#9 /opt/lampp/htdocs/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 /opt/lampp/htdocs/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /opt/lampp/htdocs/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-23 03:13:21 --> Table 'teste.users' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Views/apilc.php(10): CodeIgniter\Database\BaseConnection->query('SELECT * FROM users WHERE cpf = \'2\' AND nome = \'2\' AND email = \'2\' AND senha = \'2\'')
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/apilc.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('apilc', [], true)
+ 5 APPPATH/Controllers/Home.php(25): view('apilc')
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->apilc()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-23 03:28:39 --> syntax error, unexpected variable "$query"
+in APPPATH/Views/apilc.php on line 11.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('apilc', [], true)
+ 3 APPPATH/Controllers/Home.php(25): view('apilc')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->apilc()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-23 03:30:05 --> syntax error, unexpected variable "$query"
+in APPPATH/Views/apilc.php on line 11.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('apilc', [], true)
+ 3 APPPATH/Controllers/Home.php(25): view('apilc')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->apilc()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-23 03:32:49 --> syntax error, unexpected variable "$query"
+in APPPATH/Views/apilc.php on line 11.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('apilc', [], true)
+ 3 APPPATH/Controllers/Home.php(25): view('apilc')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->apilc()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-23 03:33:04 --> syntax error, unexpected variable "$query"
+in APPPATH/Views/apilc.php on line 11.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('apilc', [], true)
+ 3 APPPATH/Controllers/Home.php(25): view('apilc')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->apilc()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-23 03:35:39 --> syntax error, unexpected variable "$query"
+in APPPATH/Views/apilc.php on line 11.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('apilc', [], true)
+ 3 APPPATH/Controllers/Home.php(25): view('apilc')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->apilc()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-23 03:35:41 --> syntax error, unexpected variable "$query"
+in APPPATH/Views/apilc.php on line 11.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('apilc', [], true)
+ 3 APPPATH/Controllers/Home.php(25): view('apilc')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->apilc()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-23 03:37:47 --> Unclosed '{' on line 2
+in APPPATH/Views/apilc.php on line 24.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('apilc', [], true)
+ 3 APPPATH/Controllers/Home.php(25): view('apilc')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->apilc()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-23 03:38:21 --> Undefined variable $cpf
+in APPPATH/Views/apilc.php on line 13.
+ 1 APPPATH/Views/apilc.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cpf', 'APPPATH/Views/apilc.php', 13)
+ 2 SYSTEMPATH/Database/BaseConnection.php(927): CodeIgniter\View\View::{closure}(Object(CodeIgniter\Database\MySQLi\Connection))
+ 3 APPPATH/Views/apilc.php(11): CodeIgniter\Database\BaseConnection->prepare(Object(Closure))
+ 4 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/apilc.php')
+ 5 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('apilc', [], true)
+ 7 APPPATH/Controllers/Home.php(25): view('apilc')
+ 8 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->apilc()
+ 9 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-23 03:39:11 --> Undefined variable $codigo
+in APPPATH/Views/apilc.php on line 19.
+ 1 APPPATH/Views/apilc.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $codigo', 'APPPATH/Views/apilc.php', 19)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/apilc.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('apilc', [], true)
+ 5 APPPATH/Controllers/Home.php(25): view('apilc')
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->apilc()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-23 03:39:48 --> syntax error, unexpected token "if"
+in APPPATH/Views/apilc.php on line 19.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('apilc', [], true)
+ 3 APPPATH/Controllers/Home.php(25): view('apilc')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->apilc()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-23 03:40:33 --> syntax error, unexpected token "if"
+in APPPATH/Views/apilc.php on line 19.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('apilc', [], true)
+ 3 APPPATH/Controllers/Home.php(25): view('apilc')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->apilc()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-23 03:40:47 --> Unmatched '}'
+in APPPATH/Views/apilc.php on line 27.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('apilc', [], true)
+ 3 APPPATH/Controllers/Home.php(25): view('apilc')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->apilc()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-23 03:42:30 --> syntax error, unexpected variable "$db", expecting "," or ";"
+in APPPATH/Views/apilc.php on line 21.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('apilc', [], true)
+ 3 APPPATH/Controllers/Home.php(25): view('apilc')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->apilc()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-23 03:42:48 --> syntax error, unexpected variable "$db", expecting "," or ";"
+in APPPATH/Views/apilc.php on line 21.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('apilc', [], true)
+ 3 APPPATH/Controllers/Home.php(25): view('apilc')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->apilc()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-23 03:43:02 --> syntax error, unexpected variable "$db", expecting "," or ";"
+in APPPATH/Views/apilc.php on line 20.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('apilc', [], true)
+ 3 APPPATH/Controllers/Home.php(25): view('apilc')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->apilc()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-23 03:50:45 --> syntax error, unexpected token ";"
+in APPPATH/Views/apilc.php on line 13.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('apilc', [], true)
+ 3 APPPATH/Controllers/Home.php(25): view('apilc')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->apilc()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-23 03:50:57 --> syntax error, unexpected token ";"
+in APPPATH/Views/apilc.php on line 13.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('apilc', [], true)
+ 3 APPPATH/Controllers/Home.php(25): view('apilc')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->apilc()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-23 03:53:52 --> mysqli_sql_exception: Duplicate entry '4' for key 'email' in /opt/lampp/htdocs/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/system/Database/MySQLi/Connection.php(295): mysqli->query('insert into usu...', 0)
+#1 /opt/lampp/htdocs/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('insert into usu...')
+#2 /opt/lampp/htdocs/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('insert into usu...')
+#3 /opt/lampp/htdocs/app/Views/apilc.php(14): CodeIgniter\Database\BaseConnection->query('insert into usu...', Array)
+#4 /opt/lampp/htdocs/system/View/View.php(213): include('/opt/lampp/htdo...')
+#5 /opt/lampp/htdocs/system/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 /opt/lampp/htdocs/system/Common.php(1184): CodeIgniter\View\View->render('apilc', Array, true)
+#7 /opt/lampp/htdocs/app/Controllers/Home.php(25): view('apilc')
+#8 /opt/lampp/htdocs/system/CodeIgniter.php(934): App\Controllers\Home->apilc()
+#9 /opt/lampp/htdocs/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 /opt/lampp/htdocs/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /opt/lampp/htdocs/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-23 03:53:52 --> Duplicate entry '4' for key 'email'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Views/apilc.php(14): CodeIgniter\Database\BaseConnection->query('insert into usuarios (cpf, nome, email, senha, telefone) values( ?, ?, ?, ?, ?);', [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/apilc.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('apilc', [], true)
+ 5 APPPATH/Controllers/Home.php(25): view('apilc')
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->apilc()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-23 23:26:52 --> syntax error, unexpected token "if"
+in APPPATH/Views/apilc.php on line 4.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('apilc', [], true)
+ 3 APPPATH/Controllers/Home.php(25): view('apilc')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->apilc()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-23 23:27:52 --> syntax error, unexpected token "if"
+in APPPATH/Views/apilc.php on line 4.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('apilc', [], true)
+ 3 APPPATH/Controllers/Home.php(25): view('apilc')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->apilc()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-23 23:30:09 --> syntax error, unexpected token "}", expecting "," or ";"
+in APPPATH/Views/apilc.php on line 36.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('apilc', [], true)
+ 3 APPPATH/Controllers/Home.php(25): view('apilc')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->apilc()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-23 23:32:00 --> syntax error, unexpected token "}", expecting "," or ";"
+in APPPATH/Views/apilc.php on line 36.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('apilc', [], true)
+ 3 APPPATH/Controllers/Home.php(25): view('apilc')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->apilc()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-23 23:33:37 --> syntax error, unexpected token "}", expecting "," or ";"
+in APPPATH/Views/apilc.php on line 36.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('apilc', [], true)
+ 3 APPPATH/Controllers/Home.php(25): view('apilc')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->apilc()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-23 23:33:37 --> syntax error, unexpected token "}", expecting "," or ";"
+in APPPATH/Views/apilc.php on line 36.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('apilc', [], true)
+ 3 APPPATH/Controllers/Home.php(25): view('apilc')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->apilc()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-23 23:35:07 --> syntax error, unexpected token "}", expecting "," or ";"
+in APPPATH/Views/apilc.php on line 36.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('apilc', [], true)
+ 3 APPPATH/Controllers/Home.php(25): view('apilc')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->apilc()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-23 23:35:07 --> syntax error, unexpected token "}", expecting "," or ";"
+in APPPATH/Views/apilc.php on line 36.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('apilc', [], true)
+ 3 APPPATH/Controllers/Home.php(25): view('apilc')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->apilc()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-23 23:41:23 --> syntax error, unexpected token "}", expecting "," or ";"
+in APPPATH/Views/apilc.php on line 36.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('apilc', [], true)
+ 3 APPPATH/Controllers/Home.php(25): view('apilc')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->apilc()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-23 23:41:36 --> syntax error, unexpected token "}", expecting "," or ";"
+in APPPATH/Views/apilc.php on line 36.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('apilc', [], true)
+ 3 APPPATH/Controllers/Home.php(25): view('apilc')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->apilc()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-23 23:41:48 --> syntax error, unexpected token "}", expecting "," or ";"
+in APPPATH/Views/apilc.php on line 36.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('apilc', [], true)
+ 3 APPPATH/Controllers/Home.php(25): view('apilc')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->apilc()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-23 23:41:48 --> syntax error, unexpected token "}", expecting "," or ";"
+in APPPATH/Views/apilc.php on line 36.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('apilc', [], true)
+ 3 APPPATH/Controllers/Home.php(25): view('apilc')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->apilc()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-23 23:41:48 --> syntax error, unexpected token "}", expecting "," or ";"
+in APPPATH/Views/apilc.php on line 36.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('apilc', [], true)
+ 3 APPPATH/Controllers/Home.php(25): view('apilc')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->apilc()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-23 23:41:49 --> syntax error, unexpected token "}", expecting "," or ";"
+in APPPATH/Views/apilc.php on line 36.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('apilc', [], true)
+ 3 APPPATH/Controllers/Home.php(25): view('apilc')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->apilc()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-23 23:41:50 --> syntax error, unexpected token "}", expecting "," or ";"
+in APPPATH/Views/apilc.php on line 36.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('apilc', [], true)
+ 3 APPPATH/Controllers/Home.php(25): view('apilc')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->apilc()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-23 23:41:51 --> syntax error, unexpected token "}", expecting "," or ";"
+in APPPATH/Views/apilc.php on line 36.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('apilc', [], true)
+ 3 APPPATH/Controllers/Home.php(25): view('apilc')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->apilc()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-23 23:42:06 --> syntax error, unexpected token "}", expecting "," or ";"
+in APPPATH/Views/apilc.php on line 36.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('apilc', [], true)
+ 3 APPPATH/Controllers/Home.php(25): view('apilc')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->apilc()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-23 23:48:56 --> syntax error, unexpected token "}", expecting "," or ";"
+in APPPATH/Views/apilc.php on line 33.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('apilc', [], true)
+ 3 APPPATH/Controllers/Home.php(25): view('apilc')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->apilc()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-23 23:48:59 --> syntax error, unexpected token "}", expecting "," or ";"
+in APPPATH/Views/apilc.php on line 33.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('apilc', [], true)
+ 3 APPPATH/Controllers/Home.php(25): view('apilc')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->apilc()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-23 23:49:42 --> syntax error, unexpected token "}", expecting "," or ";"
+in APPPATH/Views/apilc.php on line 33.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('apilc', [], true)
+ 3 APPPATH/Controllers/Home.php(25): view('apilc')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->apilc()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-23 23:49:42 --> syntax error, unexpected token "}", expecting "," or ";"
+in APPPATH/Views/apilc.php on line 33.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('apilc', [], true)
+ 3 APPPATH/Controllers/Home.php(25): view('apilc')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->apilc()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-23 23:50:05 --> syntax error, unexpected token "}", expecting "," or ";"
+in APPPATH/Views/apilc.php on line 33.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('apilc', [], true)
+ 3 APPPATH/Controllers/Home.php(25): view('apilc')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->apilc()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-23 23:50:07 --> syntax error, unexpected token "}", expecting "," or ";"
+in APPPATH/Views/apilc.php on line 33.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('apilc', [], true)
+ 3 APPPATH/Controllers/Home.php(25): view('apilc')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->apilc()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-23 23:57:13 --> Undefined variable $734.782.492-73
+in APPPATH/Views/apilc.php on line 36.
+ 1 APPPATH/Views/apilc.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $734.782.492-73', 'APPPATH/Views/apilc.php', 36)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/apilc.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('apilc', [], true)
+ 5 APPPATH/Controllers/Home.php(25): view('apilc')
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->apilc()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

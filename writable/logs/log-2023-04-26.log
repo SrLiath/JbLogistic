@@ -1,0 +1,487 @@
+CRITICAL - 2023-04-26 16:26:10 --> Undefined array key "entregador_id"
+in APPPATH/Controllers/Admin.php on line 100.
+ 1 APPPATH/Controllers/Admin.php(100): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "entregador_id"', 'APPPATH/Controllers/Admin.php', 100)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->confirmentregadorapi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-26 16:26:37 --> Undefined array key "entregador_id"
+in APPPATH/Controllers/Admin.php on line 100.
+ 1 APPPATH/Controllers/Admin.php(100): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "entregador_id"', 'APPPATH/Controllers/Admin.php', 100)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->confirmentregadorapi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-26 16:27:42 --> Undefined array key "entregador_id"
+in APPPATH/Controllers/Admin.php on line 100.
+ 1 APPPATH/Controllers/Admin.php(100): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "entregador_id"', 'APPPATH/Controllers/Admin.php', 100)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->confirmentregadorapi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-26 16:28:18 --> Undefined array key "entregador_id"
+in APPPATH/Controllers/Admin.php on line 100.
+ 1 APPPATH/Controllers/Admin.php(100): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "entregador_id"', 'APPPATH/Controllers/Admin.php', 100)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->confirmentregadorapi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-26 16:28:51 --> Undefined array key "entregador_id"
+in APPPATH/Controllers/Admin.php on line 100.
+ 1 APPPATH/Controllers/Admin.php(100): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "entregador_id"', 'APPPATH/Controllers/Admin.php', 100)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->confirmentregadorapi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-26 16:29:08 --> Undefined array key "entregador_id"
+in APPPATH/Controllers/Admin.php on line 100.
+ 1 APPPATH/Controllers/Admin.php(100): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "entregador_id"', 'APPPATH/Controllers/Admin.php', 100)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->confirmentregadorapi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-26 16:30:23 --> Undefined array key "entregador_id"
+in APPPATH/Controllers/Admin.php on line 100.
+ 1 APPPATH/Controllers/Admin.php(100): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "entregador_id"', 'APPPATH/Controllers/Admin.php', 100)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->confirmentregadorapi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-26 16:34:16 --> Undefined array key "entregadorId"
+in APPPATH/Controllers/Admin.php on line 100.
+ 1 APPPATH/Controllers/Admin.php(100): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "entregadorId"', 'APPPATH/Controllers/Admin.php', 100)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->confirmentregadorapi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-26 16:35:15 --> Undefined array key "entregadorId"
+in APPPATH/Controllers/Admin.php on line 100.
+ 1 APPPATH/Controllers/Admin.php(100): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "entregadorId"', 'APPPATH/Controllers/Admin.php', 100)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->confirmentregadorapi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-26 16:49:11 --> Undefined array key "entregadorId"
+in APPPATH/Controllers/Admin.php on line 100.
+ 1 APPPATH/Controllers/Admin.php(100): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "entregadorId"', 'APPPATH/Controllers/Admin.php', 100)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->confirmentregadorapi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-26 16:53:40 --> Undefined array key "ids"
+in APPPATH/Controllers/Admin.php on line 102.
+ 1 APPPATH/Controllers/Admin.php(102): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ids"', 'APPPATH/Controllers/Admin.php', 102)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->confirmentregadorapi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-26 17:14:57 --> Undefined variable $entregador_id
+in APPPATH/Controllers/Admin.php on line 108.
+ 1 APPPATH/Controllers/Admin.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $entregador_id', 'APPPATH/Controllers/Admin.php', 108)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->confirmentregadorapi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-26 17:20:06 --> Undefined array key "ids"
+in APPPATH/Controllers/Admin.php on line 101.
+ 1 APPPATH/Controllers/Admin.php(101): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ids"', 'APPPATH/Controllers/Admin.php', 101)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->confirmentregadorapi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-26 17:55:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 17:55:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 17:55:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 17:55:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 18:00:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 18:00:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 18:01:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 18:01:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 18:02:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 18:02:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 18:02:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 18:03:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 18:03:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 18:03:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 18:03:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 18:04:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 18:08:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 18:08:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 18:09:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 18:11:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 18:11:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 18:12:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 18:12:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 18:14:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-26 18:14:34 --> mysqli_sql_exception: Unknown column 'usuarios.nome' in 'field list' in /opt/lampp/htdocs/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `pedidos...', 0)
+#1 /opt/lampp/htdocs/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pedidos...')
+#2 /opt/lampp/htdocs/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pedidos...')
+#3 /opt/lampp/htdocs/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `pedidos...', Array, false)
+#4 /opt/lampp/htdocs/app/Controllers/Entregador.php(39): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/system/CodeIgniter.php(934): App\Controllers\Entregador->entregador()
+#6 /opt/lampp/htdocs/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Entregador))
+#7 /opt/lampp/htdocs/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/public/index.php(74): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-26 18:14:34 --> Unknown column 'usuarios.nome' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `pedidos`.*, `usuarios`.`nome` as `nome_usuario`
+FROM `pedidos`
+WHERE `pedidos`.`status` = :pedidos.status:
+AND `pedidos`.`id_entregador` = :pedidos.id_entregador:
+OR `pedidos`.`vision` = :pedidos.vision:', [...], false)
+ 2 APPPATH/Controllers/Entregador.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Entregador->entregador()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Entregador))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-26 18:20:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 18:24:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 18:26:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-26 18:26:19 --> mysqli_sql_exception: Not unique table/alias: 'usuarios' in /opt/lampp/htdocs/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `pedidos...', 0)
+#1 /opt/lampp/htdocs/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pedidos...')
+#2 /opt/lampp/htdocs/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pedidos...')
+#3 /opt/lampp/htdocs/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `pedidos...', Array, false)
+#4 /opt/lampp/htdocs/app/Controllers/Entregador.php(41): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/system/CodeIgniter.php(934): App\Controllers\Entregador->entregador()
+#6 /opt/lampp/htdocs/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Entregador))
+#7 /opt/lampp/htdocs/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/public/index.php(74): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-26 18:26:19 --> Not unique table/alias: 'usuarios'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `pedidos`.*, `usuarios`.`nome` as `nome_usuario`
+FROM `pedidos`
+JOIN `usuarios` ON `pedidos`.`id_usuario` = `usuarios`.`id`
+LEFT JOIN `usuarios` ON `pedidos`.`id_usuario` = `NULL`
+WHERE `pedidos`.`status` = :pedidos.status:
+AND `pedidos`.`id_entregador` = :pedidos.id_entregador:
+OR `pedidos`.`vision` = :pedidos.vision:', [...], false)
+ 2 APPPATH/Controllers/Entregador.php(41): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Entregador->entregador()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Entregador))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-26 18:26:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-26 18:26:45 --> mysqli_sql_exception: Not unique table/alias: 'usuarios' in /opt/lampp/htdocs/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `pedidos...', 0)
+#1 /opt/lampp/htdocs/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pedidos...')
+#2 /opt/lampp/htdocs/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pedidos...')
+#3 /opt/lampp/htdocs/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `pedidos...', Array, false)
+#4 /opt/lampp/htdocs/app/Controllers/Entregador.php(41): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/system/CodeIgniter.php(934): App\Controllers\Entregador->entregador()
+#6 /opt/lampp/htdocs/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Entregador))
+#7 /opt/lampp/htdocs/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/public/index.php(74): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-26 18:26:45 --> Not unique table/alias: 'usuarios'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `pedidos`.*, `usuarios`.`nome` as `nome_usuario`
+FROM `pedidos`
+JOIN `usuarios` ON `pedidos`.`id_usuario` = `usuarios`.`id`
+RIGHT JOIN `usuarios` ON `pedidos`.`id_usuario` = `NULL`
+WHERE `pedidos`.`status` = :pedidos.status:
+AND `pedidos`.`id_entregador` = :pedidos.id_entregador:
+OR `pedidos`.`vision` = :pedidos.vision:', [...], false)
+ 2 APPPATH/Controllers/Entregador.php(41): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Entregador->entregador()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Entregador))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-26 18:34:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-26 18:34:38 --> mysqli_sql_exception: Unknown column 'pedidos' in 'field list' in /opt/lampp/htdocs/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `pedidos...', 0)
+#1 /opt/lampp/htdocs/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pedidos...')
+#2 /opt/lampp/htdocs/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pedidos...')
+#3 /opt/lampp/htdocs/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `pedidos...', Array, false)
+#4 /opt/lampp/htdocs/app/Controllers/Entregador.php(45): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/system/CodeIgniter.php(934): App\Controllers\Entregador->entregador()
+#6 /opt/lampp/htdocs/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Entregador))
+#7 /opt/lampp/htdocs/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/public/index.php(74): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-26 18:34:38 --> Unknown column 'pedidos' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `pedidos`
+FROM `pedidos`
+WHERE `pedidos`.`status` = :pedidos.status:
+AND `pedidos`.`vision` = :pedidos.vision:', [...], false)
+ 2 APPPATH/Controllers/Entregador.php(45): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Entregador->entregador()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Entregador))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-26 18:35:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-26 18:35:57 --> mysqli_sql_exception: Unknown column 'pedidos' in 'field list' in /opt/lampp/htdocs/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `pedidos...', 0)
+#1 /opt/lampp/htdocs/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pedidos...')
+#2 /opt/lampp/htdocs/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pedidos...')
+#3 /opt/lampp/htdocs/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `pedidos...', Array, false)
+#4 /opt/lampp/htdocs/app/Controllers/Entregador.php(45): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/system/CodeIgniter.php(934): App\Controllers\Entregador->entregador()
+#6 /opt/lampp/htdocs/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Entregador))
+#7 /opt/lampp/htdocs/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/public/index.php(74): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-26 18:35:57 --> Unknown column 'pedidos' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `pedidos`
+FROM `pedidos`
+WHERE `pedidos`.`status` = :pedidos.status:
+AND `pedidos`.`vision` = :pedidos.vision:', [...], false)
+ 2 APPPATH/Controllers/Entregador.php(45): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Entregador->entregador()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Entregador))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-26 18:36:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 18:38:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 18:38:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 18:39:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 18:39:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 18:41:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 18:45:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 18:45:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 19:18:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 19:18:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 19:19:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 19:20:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-26 19:20:27 --> syntax error, unexpected token "}", expecting "," or ";"
+in APPPATH/Views/entregador.php on line 53.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('entregador', [], true)
+ 3 APPPATH/Controllers/Entregador.php(67): view('entregador', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Entregador->entregador()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Entregador))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-26 19:20:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 19:21:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 19:23:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 19:23:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 19:24:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 19:24:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 19:37:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 19:37:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-26 19:37:25 --> Undefined array key "nome"
+in APPPATH/Controllers/Entregador.php on line 95.
+ 1 APPPATH/Controllers/Entregador.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nome"', 'APPPATH/Controllers/Entregador.php', 95)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Entregador->confirmentregadorapi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Entregador))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-26 19:37:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-26 19:37:31 --> Undefined array key "nome"
+in APPPATH/Controllers/Entregador.php on line 95.
+ 1 APPPATH/Controllers/Entregador.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nome"', 'APPPATH/Controllers/Entregador.php', 95)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Entregador->confirmentregadorapi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Entregador))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-26 19:37:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 19:37:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-26 19:37:46 --> Undefined array key "nome"
+in APPPATH/Controllers/Entregador.php on line 95.
+ 1 APPPATH/Controllers/Entregador.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nome"', 'APPPATH/Controllers/Entregador.php', 95)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Entregador->confirmentregadorapi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Entregador))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-26 19:38:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 19:38:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-26 19:38:15 --> Undefined array key "nome"
+in APPPATH/Controllers/Entregador.php on line 95.
+ 1 APPPATH/Controllers/Entregador.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nome"', 'APPPATH/Controllers/Entregador.php', 95)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Entregador->confirmentregadorapi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Entregador))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-26 19:38:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 19:46:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-26 19:46:37 --> Undefined array key "pedidoId"
+in APPPATH/Controllers/Entregador.php on line 108.
+ 1 APPPATH/Controllers/Entregador.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "pedidoId"', 'APPPATH/Controllers/Entregador.php', 108)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Entregador->confirmentregadorapi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Entregador))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-26 19:46:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 19:46:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-26 19:46:41 --> Undefined array key "pedidoId"
+in APPPATH/Controllers/Entregador.php on line 108.
+ 1 APPPATH/Controllers/Entregador.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "pedidoId"', 'APPPATH/Controllers/Entregador.php', 108)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Entregador->confirmentregadorapi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Entregador))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-26 19:46:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 19:47:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 19:47:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-26 19:47:15 --> Undefined array key "pedidoId"
+in APPPATH/Controllers/Entregador.php on line 108.
+ 1 APPPATH/Controllers/Entregador.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "pedidoId"', 'APPPATH/Controllers/Entregador.php', 108)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Entregador->confirmentregadorapi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Entregador))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-26 19:47:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-26 19:47:16 --> Undefined array key "pedidoId"
+in APPPATH/Controllers/Entregador.php on line 108.
+ 1 APPPATH/Controllers/Entregador.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "pedidoId"', 'APPPATH/Controllers/Entregador.php', 108)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Entregador->confirmentregadorapi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Entregador))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-26 19:48:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 19:48:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-26 19:48:49 --> Undefined array key "pedidoId"
+in APPPATH/Controllers/Entregador.php on line 108.
+ 1 APPPATH/Controllers/Entregador.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "pedidoId"', 'APPPATH/Controllers/Entregador.php', 108)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Entregador->confirmentregadorapi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Entregador))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-26 19:49:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 19:49:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-26 19:49:39 --> Undefined array key "pedidoId"
+in APPPATH/Controllers/Entregador.php on line 108.
+ 1 APPPATH/Controllers/Entregador.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "pedidoId"', 'APPPATH/Controllers/Entregador.php', 108)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Entregador->confirmentregadorapi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Entregador))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-26 19:52:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 19:52:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-26 19:52:38 --> Undefined array key "pedidoId"
+in APPPATH/Controllers/Entregador.php on line 108.
+ 1 APPPATH/Controllers/Entregador.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "pedidoId"', 'APPPATH/Controllers/Entregador.php', 108)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Entregador->confirmentregadorapi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Entregador))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-26 19:52:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 19:53:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 19:53:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-26 19:53:20 --> Undefined array key "pedidoId"
+in APPPATH/Controllers/Entregador.php on line 108.
+ 1 APPPATH/Controllers/Entregador.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "pedidoId"', 'APPPATH/Controllers/Entregador.php', 108)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Entregador->confirmentregadorapi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Entregador))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-26 19:53:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 19:53:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 19:53:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-26 19:53:51 --> Undefined array key "pedidoId"
+in APPPATH/Controllers/Entregador.php on line 108.
+ 1 APPPATH/Controllers/Entregador.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "pedidoId"', 'APPPATH/Controllers/Entregador.php', 108)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Entregador->confirmentregadorapi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Entregador))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-26 19:53:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 19:55:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 19:55:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-26 19:55:05 --> Undefined array key "pedidoId"
+in APPPATH/Controllers/Entregador.php on line 108.
+ 1 APPPATH/Controllers/Entregador.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "pedidoId"', 'APPPATH/Controllers/Entregador.php', 108)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Entregador->confirmentregadorapi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Entregador))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-26 20:02:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 20:02:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 20:03:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 20:04:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 20:09:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 20:09:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 20:09:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-26 20:10:00 --> Undefined array key "pedidoId"
+in APPPATH/Controllers/Entregador.php on line 108.
+ 1 APPPATH/Controllers/Entregador.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "pedidoId"', 'APPPATH/Controllers/Entregador.php', 108)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Entregador->confirmentregadorapi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Entregador))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-26 20:10:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 20:11:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 20:11:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-26 20:11:13 --> Undefined array key "pedidoId"
+in APPPATH/Controllers/Entregador.php on line 108.
+ 1 APPPATH/Controllers/Entregador.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "pedidoId"', 'APPPATH/Controllers/Entregador.php', 108)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Entregador->confirmentregadorapi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Entregador))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-26 20:11:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 20:11:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 20:11:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-26 20:11:43 --> Undefined array key "pedidoId"
+in APPPATH/Controllers/Entregador.php on line 108.
+ 1 APPPATH/Controllers/Entregador.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "pedidoId"', 'APPPATH/Controllers/Entregador.php', 108)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Entregador->confirmentregadorapi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Entregador))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-26 20:14:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 20:14:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-26 20:14:10 --> Undefined array key "pedidoId"
+in APPPATH/Controllers/Entregador.php on line 108.
+ 1 APPPATH/Controllers/Entregador.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "pedidoId"', 'APPPATH/Controllers/Entregador.php', 108)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Entregador->confirmentregadorapi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Entregador))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-26 20:14:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 20:15:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 20:15:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-26 20:15:26 --> Undefined array key "pedidoId"
+in APPPATH/Controllers/Entregador.php on line 108.
+ 1 APPPATH/Controllers/Entregador.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "pedidoId"', 'APPPATH/Controllers/Entregador.php', 108)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Entregador->confirmentregadorapi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Entregador))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-26 20:15:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 20:19:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 20:19:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-26 20:19:18 --> Undefined array key "pedidoId"
+in APPPATH/Controllers/Entregador.php on line 108.
+ 1 APPPATH/Controllers/Entregador.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "pedidoId"', 'APPPATH/Controllers/Entregador.php', 108)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Entregador->confirmentregadorapi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Entregador))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-26 20:19:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 20:19:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-26 20:19:46 --> Undefined array key "pedidoId"
+in APPPATH/Controllers/Entregador.php on line 108.
+ 1 APPPATH/Controllers/Entregador.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "pedidoId"', 'APPPATH/Controllers/Entregador.php', 108)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Entregador->confirmentregadorapi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Entregador))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-26 20:19:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 20:20:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 20:20:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-26 20:20:27 --> Undefined array key "pedidoId"
+in APPPATH/Controllers/Entregador.php on line 108.
+ 1 APPPATH/Controllers/Entregador.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "pedidoId"', 'APPPATH/Controllers/Entregador.php', 108)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Entregador->confirmentregadorapi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Entregador))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-26 20:20:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 20:20:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 20:20:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 20:20:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 20:21:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 20:21:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-26 20:21:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

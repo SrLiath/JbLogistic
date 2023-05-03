@@ -1,0 +1,552 @@
+INFO - 2023-04-20 00:32:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 00:32:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 01:03:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 01:04:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 01:04:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 01:05:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 01:09:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-20 01:09:35 --> unlink(/opt/lampp/htdocs/writable/debugbar/debugbar_1681951825.636608.json): No such file or directory
+in SYSTEMPATH/Debug/Toolbar/Collectors/History.php on line 76.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(/opt/lampp/htdocs/writable/debugbar/debugbar_1681951825.636608.json): No such file or directory', 'SYSTEMPATH/Debug/Toolbar/Collectors/History.php', 76)
+ 2 SYSTEMPATH/Debug/Toolbar/Collectors/History.php(76): unlink('ROOTPATH/writable/debugbar/debugbar_1681951825.636608.json')
+ 3 SYSTEMPATH/Debug/Toolbar.php(495): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles('1681952971.229480', 20)
+ 4 SYSTEMPATH/Debug/Toolbar.php(474): CodeIgniter\Debug\Toolbar->format([...], 'html')
+ 5 APPPATH/Config/Events.php(46): CodeIgniter\Debug\Toolbar->respond()
+ 6 SYSTEMPATH/Events/Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+ 7 SYSTEMPATH/CodeIgniter.php(350): CodeIgniter\Events\Events::trigger('pre_system')
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-20 01:09:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 01:33:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 01:33:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 01:34:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 01:34:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 01:35:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 01:36:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 01:36:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-04-20 01:40:39 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'usuario' at line 3 in /opt/lampp/htdocs/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/system/Database/MySQLi/Connection.php(295): mysqli->query('UPDATE `pedidos...', 0)
+#1 /opt/lampp/htdocs/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `pedidos...')
+#2 /opt/lampp/htdocs/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `pedidos...')
+#3 /opt/lampp/htdocs/system/Database/BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `pedidos...', Array, false)
+#4 /opt/lampp/htdocs/app/Controllers/Admin.php(107): CodeIgniter\Database\BaseBuilder->update('status', 'aguardando usua...')
+#5 /opt/lampp/htdocs/system/CodeIgniter.php(934): App\Controllers\Admin->confirmentregadorapi()
+#6 /opt/lampp/htdocs/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /opt/lampp/htdocs/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-20 01:40:39 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'usuario' at line 3
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `pedidos` SET `status` = :status:
+WHERE `id` = :id:
+AND aguardando usuario', [...], false)
+ 2 APPPATH/Controllers/Admin.php(107): CodeIgniter\Database\BaseBuilder->update('status', 'aguardando usuario')
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->confirmentregadorapi()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-20 01:40:48 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'usuario' at line 3 in /opt/lampp/htdocs/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/system/Database/MySQLi/Connection.php(295): mysqli->query('UPDATE `pedidos...', 0)
+#1 /opt/lampp/htdocs/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `pedidos...')
+#2 /opt/lampp/htdocs/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `pedidos...')
+#3 /opt/lampp/htdocs/system/Database/BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `pedidos...', Array, false)
+#4 /opt/lampp/htdocs/app/Controllers/Admin.php(107): CodeIgniter\Database\BaseBuilder->update('status', 'aguardando usua...')
+#5 /opt/lampp/htdocs/system/CodeIgniter.php(934): App\Controllers\Admin->confirmentregadorapi()
+#6 /opt/lampp/htdocs/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /opt/lampp/htdocs/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-20 01:40:48 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'usuario' at line 3
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `pedidos` SET `status` = :status:
+WHERE `id` = :id:
+AND aguardando usuario', [...], false)
+ 2 APPPATH/Controllers/Admin.php(107): CodeIgniter\Database\BaseBuilder->update('status', 'aguardando usuario')
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->confirmentregadorapi()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-20 01:42:17 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'usuario' at line 3 in /opt/lampp/htdocs/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/system/Database/MySQLi/Connection.php(295): mysqli->query('UPDATE `pedidos...', 0)
+#1 /opt/lampp/htdocs/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `pedidos...')
+#2 /opt/lampp/htdocs/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `pedidos...')
+#3 /opt/lampp/htdocs/system/Database/BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `pedidos...', Array, false)
+#4 /opt/lampp/htdocs/app/Controllers/Admin.php(107): CodeIgniter\Database\BaseBuilder->update('status', 'aguardando usua...')
+#5 /opt/lampp/htdocs/system/CodeIgniter.php(934): App\Controllers\Admin->confirmentregadorapi()
+#6 /opt/lampp/htdocs/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /opt/lampp/htdocs/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-20 01:42:17 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'usuario' at line 3
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `pedidos` SET `status` = :status:
+WHERE `id` = :id:
+AND aguardando usuario', [...], false)
+ 2 APPPATH/Controllers/Admin.php(107): CodeIgniter\Database\BaseBuilder->update('status', 'aguardando usuario')
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->confirmentregadorapi()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-20 01:42:41 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'usuario' at line 3 in /opt/lampp/htdocs/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/system/Database/MySQLi/Connection.php(295): mysqli->query('UPDATE `pedidos...', 0)
+#1 /opt/lampp/htdocs/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `pedidos...')
+#2 /opt/lampp/htdocs/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `pedidos...')
+#3 /opt/lampp/htdocs/system/Database/BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `pedidos...', Array, false)
+#4 /opt/lampp/htdocs/app/Controllers/Admin.php(107): CodeIgniter\Database\BaseBuilder->update('status', 'aguardando usua...')
+#5 /opt/lampp/htdocs/system/CodeIgniter.php(934): App\Controllers\Admin->confirmentregadorapi()
+#6 /opt/lampp/htdocs/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /opt/lampp/htdocs/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-20 01:42:41 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'usuario' at line 3
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `pedidos` SET `status` = :status:
+WHERE `id` = :id:
+AND aguardando usuario', [...], false)
+ 2 APPPATH/Controllers/Admin.php(107): CodeIgniter\Database\BaseBuilder->update('status', 'aguardando usuario')
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->confirmentregadorapi()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-20 01:44:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 01:44:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 01:44:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 01:44:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 01:44:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 01:44:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 01:45:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 01:45:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 01:46:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 01:46:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 01:46:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 01:50:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 01:50:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 01:50:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 02:02:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 02:02:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 02:03:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 02:03:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 02:04:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 02:05:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 02:05:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 02:05:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 02:05:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 02:06:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 02:18:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 02:18:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 02:18:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 02:18:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 02:18:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 02:18:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 02:19:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 02:20:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 02:21:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 02:23:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 02:25:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 02:27:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 02:28:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 02:29:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 02:30:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 02:30:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 02:31:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 02:32:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-20 02:32:22 --> Undefined array key "entregador_id"
+in APPPATH/Controllers/Admin.php on line 99.
+ 1 APPPATH/Controllers/Admin.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "entregador_id"', 'APPPATH/Controllers/Admin.php', 99)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->confirmentregadorapi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-20 02:33:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 02:33:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 02:35:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 02:51:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 02:51:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 02:52:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 02:52:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 03:27:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 03:54:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 03:54:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 03:54:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 03:55:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 03:55:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 03:55:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 03:55:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 04:00:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 04:03:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 04:04:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 04:05:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 04:06:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 04:08:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 04:08:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 04:08:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 04:09:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 04:09:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 04:09:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 04:10:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 04:11:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 04:11:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 04:11:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 04:12:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 04:12:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 04:12:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 04:13:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 04:13:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 04:13:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 04:31:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 04:32:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 04:34:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 04:34:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 04:34:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 04:37:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 04:38:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 04:38:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 04:38:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 04:38:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-20 04:55:53 --> Class "App\Controllers\TCPDF" not found
+in APPPATH/Controllers/Admin.php on line 112.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->download()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-20 14:59:41 --> Class "App\Controllers\TCPDF" not found
+in APPPATH/Controllers/Admin.php on line 112.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->download()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-20 15:59:35 --> Undefined array key "nome"
+in APPPATH/Controllers/Admin.php on line 131.
+ 1 APPPATH/Controllers/Admin.php(131): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nome"', 'APPPATH/Controllers/Admin.php', 131)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->download()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-20 15:59:53 --> Undefined array key "nome"
+in APPPATH/Controllers/Admin.php on line 130.
+ 1 APPPATH/Controllers/Admin.php(130): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nome"', 'APPPATH/Controllers/Admin.php', 130)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->download()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-20 16:03:04 --> Undefined array key "nome_entregador"
+in APPPATH/Controllers/Admin.php on line 131.
+ 1 APPPATH/Controllers/Admin.php(131): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nome_entregador"', 'APPPATH/Controllers/Admin.php', 131)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->download()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-20 16:04:20 --> Undefined array key "nome_entregador"
+in APPPATH/Controllers/Admin.php on line 139.
+ 1 APPPATH/Controllers/Admin.php(139): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nome_entregador"', 'APPPATH/Controllers/Admin.php', 139)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->download()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-04-20 16:05:24 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH/Controllers/Admin.php on line 148.
+ 1 APPPATH/Controllers/Admin.php(148): number_format(null, 2)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->download()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-04-20 16:07:03 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH/Controllers/Admin.php on line 150.
+ 1 APPPATH/Controllers/Admin.php(150): number_format(null, 2)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->download()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-04-20 16:10:00 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH/Controllers/Admin.php on line 151.
+ 1 APPPATH/Controllers/Admin.php(151): number_format(null, 2)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->download()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-04-20 16:11:42 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH/Controllers/Admin.php on line 153.
+ 1 APPPATH/Controllers/Admin.php(153): number_format(null, 2)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->download()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-04-20 16:12:21 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH/Controllers/Admin.php on line 154.
+ 1 APPPATH/Controllers/Admin.php(154): number_format(null, 2)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->download()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-04-20 16:12:39 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH/Controllers/Admin.php on line 153.
+ 1 APPPATH/Controllers/Admin.php(153): number_format(null, 2)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->download()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-20 16:37:06 --> Undefined array key "nome_entregador"
+in APPPATH/Controllers/Admin.php on line 131.
+ 1 APPPATH/Controllers/Admin.php(131): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nome_entregador"', 'APPPATH/Controllers/Admin.php', 131)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->download()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-04-20 16:37:31 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH/Controllers/Admin.php on line 153.
+ 1 APPPATH/Controllers/Admin.php(153): number_format(null, 2)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->download()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-04-20 16:38:50 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH/Controllers/Admin.php on line 153.
+ 1 APPPATH/Controllers/Admin.php(153): number_format(null, 2)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->download()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-04-20 16:46:43 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH/Controllers/Admin.php on line 151.
+ 1 APPPATH/Controllers/Admin.php(151): number_format(null, 2)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->download()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-20 17:33:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-20 17:44:21 --> Undefined variable $db
+in APPPATH/Views/admin.php on line 76.
+ 1 APPPATH/Views/admin.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', 'APPPATH/Views/admin.php', 76)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('admin', [], true)
+ 5 APPPATH/Controllers/Admin.php(10): view('admin')
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->adminv()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-20 17:45:41 --> Undefined array key "pedido_id"
+in APPPATH/Controllers/Admin.php on line 99.
+ 1 APPPATH/Controllers/Admin.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "pedido_id"', 'APPPATH/Controllers/Admin.php', 99)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->confirmentregadorapi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-20 17:45:45 --> Undefined array key "pedido_id"
+in APPPATH/Controllers/Admin.php on line 99.
+ 1 APPPATH/Controllers/Admin.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "pedido_id"', 'APPPATH/Controllers/Admin.php', 99)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->confirmentregadorapi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-20 18:32:48 --> Undefined array key "pedido_id"
+in APPPATH/Controllers/Admin.php on line 99.
+ 1 APPPATH/Controllers/Admin.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "pedido_id"', 'APPPATH/Controllers/Admin.php', 99)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->confirmentregadorapi()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-20 18:47:05 --> Undefined array key "choice"
+in APPPATH/Controllers/Admin.php on line 112.
+ 1 APPPATH/Controllers/Admin.php(112): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "choice"', 'APPPATH/Controllers/Admin.php', 112)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->download('4', '2')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-04-20 19:06:40 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH/Controllers/Admin.php on line 157.
+ 1 APPPATH/Controllers/Admin.php(157): number_format(null, 2)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->download('1', '1', '4')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-04-20 19:06:48 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH/Controllers/Admin.php on line 157.
+ 1 APPPATH/Controllers/Admin.php(157): number_format(null, 2)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->download('1', '1', '4')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-04-20 19:07:34 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH/Controllers/Admin.php on line 157.
+ 1 APPPATH/Controllers/Admin.php(157): number_format(null, 2)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->download('1', '1', '4')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-04-20 19:07:40 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH/Controllers/Admin.php on line 157.
+ 1 APPPATH/Controllers/Admin.php(157): number_format(null, 2)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->download('1', '1', '4')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-04-20 19:07:50 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH/Controllers/Admin.php on line 157.
+ 1 APPPATH/Controllers/Admin.php(157): number_format(null, 2)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->download('1', '1', '4')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-04-20 19:08:21 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH/Controllers/Admin.php on line 157.
+ 1 APPPATH/Controllers/Admin.php(157): number_format(null, 2)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->download('1', '1', '4')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-04-20 19:12:14 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH/Controllers/Admin.php on line 157.
+ 1 APPPATH/Controllers/Admin.php(157): number_format(null, 2)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->download('1', '1', '4')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-04-20 19:13:24 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH/Controllers/Admin.php on line 157.
+ 1 APPPATH/Controllers/Admin.php(157): number_format(null, 2)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->download('1', '1', '4')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-04-20 19:13:29 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH/Controllers/Admin.php on line 157.
+ 1 APPPATH/Controllers/Admin.php(157): number_format(null, 2)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->download('1', '1', '4')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-04-20 19:13:35 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH/Controllers/Admin.php on line 157.
+ 1 APPPATH/Controllers/Admin.php(157): number_format(null, 2)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->download('1', '1', '4')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-04-20 19:14:21 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH/Controllers/Admin.php on line 158.
+ 1 APPPATH/Controllers/Admin.php(158): number_format(null, 2)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->download('1', '1', '4')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-20 19:14:41 --> Undefined array key 0
+in APPPATH/Controllers/Admin.php on line 131.
+ 1 APPPATH/Controllers/Admin.php(131): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH/Controllers/Admin.php', 131)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->download('1', '3', '4')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-20 19:19:16 --> Undefined array key 0
+in APPPATH/Controllers/Admin.php on line 130.
+ 1 APPPATH/Controllers/Admin.php(130): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH/Controllers/Admin.php', 130)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->download('1', '3', '4')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-20 19:54:13 --> Undefined array key 0
+in APPPATH/Controllers/Admin.php on line 202.
+ 1 APPPATH/Controllers/Admin.php(202): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH/Controllers/Admin.php', 202)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->download('2', '3', '4')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-04-20 19:55:40 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH/Controllers/Admin.php on line 169.
+ 1 APPPATH/Controllers/Admin.php(169): number_format(null, 2)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->download('1', '1', '04')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-04-20 19:56:02 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH/Controllers/Admin.php on line 169.
+ 1 APPPATH/Controllers/Admin.php(169): number_format(null, 2)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->download('1', '1', '04')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-04-20 19:56:07 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH/Controllers/Admin.php on line 169.
+ 1 APPPATH/Controllers/Admin.php(169): number_format(null, 2)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->download('1', '1', '04')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-04-20 19:56:11 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH/Controllers/Admin.php on line 169.
+ 1 APPPATH/Controllers/Admin.php(169): number_format(null, 2)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->download('1', '1', '04')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-04-20 19:56:15 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH/Controllers/Admin.php on line 169.
+ 1 APPPATH/Controllers/Admin.php(169): number_format(null, 2)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->download('1', '1', '04')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-04-20 19:56:22 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH/Controllers/Admin.php on line 169.
+ 1 APPPATH/Controllers/Admin.php(169): number_format(null, 2)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->download('1', '1', '04')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-04-20 19:58:17 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH/Controllers/Admin.php on line 169.
+ 1 APPPATH/Controllers/Admin.php(169): number_format(null, 2)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->download('1', '1', '04')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-04-20 20:00:16 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH/Controllers/Admin.php on line 166.
+ 1 APPPATH/Controllers/Admin.php(166): number_format(null, 2)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->download('1', '1', '04')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-04-20 20:01:28 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH/Controllers/Admin.php on line 166.
+ 1 APPPATH/Controllers/Admin.php(166): number_format(null, 2)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->download('1', '1', '04')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-20 20:08:40 --> Undefined property: stdClass::$tel
+in APPPATH/Views/admin.php on line 159.
+ 1 APPPATH/Views/admin.php(159): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$tel', 'APPPATH/Views/admin.php', 159)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('admin', [], true)
+ 5 APPPATH/Controllers/Admin.php(10): view('admin')
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->adminv()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-20 20:19:19 --> Undefined property: stdClass::$tel
+in APPPATH/Views/admin.php on line 159.
+ 1 APPPATH/Views/admin.php(159): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$tel', 'APPPATH/Views/admin.php', 159)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('admin', [], true)
+ 5 APPPATH/Controllers/Admin.php(10): view('admin')
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->adminv()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-04-20 20:57:14 --> [DEPRECATED] number_format(): Passing null to parameter #1 ($num) of type float is deprecated in APPPATH/Controllers/Admin.php on line 166.
+ 1 APPPATH/Controllers/Admin.php(166): number_format(null, 2)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->download('1', '1', '04')
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(74): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-20 21:02:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 21:02:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 21:02:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 21:04:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 21:04:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 21:08:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 21:09:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 21:09:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 21:09:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 21:10:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 21:10:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 21:10:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 21:10:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 21:11:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 21:11:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 21:11:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 21:12:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 21:13:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 21:14:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 21:14:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 21:37:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 21:37:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 21:37:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 21:37:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 21:37:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 21:38:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 21:38:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 21:38:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 21:38:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 21:38:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 22:06:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 22:07:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 22:07:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-20 22:07:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

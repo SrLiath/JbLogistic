@@ -1,0 +1,243 @@
+CRITICAL - 2023-03-21 12:56:17 --> Class "App\Controllers\UsuarioModel" not found
+in APPPATH/Controllers/Home.php on line 8.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-21 12:56:41 --> syntax error, unexpected token "endforeach", expecting end of file
+in APPPATH/Views/index.php on line 84.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('index', [], true)
+ 3 APPPATH/Controllers/Home.php(9): view('index')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-21 12:56:54 --> Class "App\Controllers\UsuarioModel" not found
+in APPPATH/Controllers/Home.php on line 8.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-21 13:10:08 --> Class "App\Controllers\UsuarioModel" not found
+in APPPATH/Controllers/Home.php on line 8.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-21 13:10:27 --> Class "App\Controllers\UsuarioModel" not found
+in APPPATH/Controllers/Home.php on line 8.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-21 13:26:34 --> Class "App\Controllers\UsuarioModel" not found
+in APPPATH/Controllers/Home.php on line 8.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-21 17:05:10 --> Undefined variable $usuarios
+in APPPATH/Views/index.php on line 30.
+ 1 APPPATH/Views/index.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuarios', 'APPPATH/Views/index.php', 30)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH/Controllers/Home.php(9): view('index')
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-21 17:11:41 --> Invalid file: "pedido_detalhes.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pedido_detalhes.php')
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('pedido_detalhes', [], true)
+ 3 APPPATH/Controllers/Home.php(11): view('pedido_detalhes', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-21 17:12:15 --> Class "App\Controllers\PedidoModel" not found
+in APPPATH/Controllers/Home.php on line 8.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-21 17:14:29 --> Too few arguments to function App\Controllers\Home::index(), 0 passed in /opt/lampp/htdocs/system/CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH/Controllers/Home.php on line 10.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-21 17:17:36 --> Undefined variable $pedido
+in APPPATH/Views/index.php on line 7.
+ 1 APPPATH/Views/index.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pedido', 'APPPATH/Views/index.php', 7)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH/Controllers/Home.php(12): view('index')
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-21 17:20:02 --> Too few arguments to function App\Controllers\Home::rastreio(), 0 passed in /opt/lampp/htdocs/system/CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH/Controllers/Home.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->rastreio()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-21 17:20:43 --> Too few arguments to function App\Controllers\Home::rastreio(), 0 passed in /opt/lampp/htdocs/system/CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH/Controllers/Home.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->rastreio()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-21 17:24:02 --> Too few arguments to function App\Controllers\Home::rastreio(), 0 passed in /opt/lampp/htdocs/system/CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH/Controllers/Home.php on line 14.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->rastreio()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-21 17:25:51 --> Too few arguments to function App\Controllers\Home::rastreio(), 0 passed in /opt/lampp/htdocs/system/CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH/Controllers/Home.php on line 14.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->rastreio()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-21 17:26:35 --> Trying to access array offset on value of type null
+in APPPATH/Views/pedido.php on line 7.
+ 1 APPPATH/Views/pedido.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Views/pedido.php', 7)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/pedido.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('pedido', [], true)
+ 5 APPPATH/Controllers/Home.php(19): view('pedido', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->rastreio()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-21 17:30:55 --> CodeIgniter\Database\BaseBuilder::like(): Argument #2 ($match) must be of type string, null given, called in /opt/lampp/htdocs/system/Model.php on line 840
+in SYSTEMPATH/Database/BaseBuilder.php on line 984.
+ 1 SYSTEMPATH/Model.php(840): CodeIgniter\Database\BaseBuilder->like('local_de_entrega', null)
+ 2 APPPATH/Controllers/Home.php(14): CodeIgniter\Model->__call('like', [...])
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-21 17:31:37 --> CodeIgniter\Database\BaseBuilder::like(): Argument #2 ($match) must be of type string, null given, called in /opt/lampp/htdocs/system/Model.php on line 840
+in SYSTEMPATH/Database/BaseBuilder.php on line 984.
+ 1 SYSTEMPATH/Model.php(840): CodeIgniter\Database\BaseBuilder->like('local_de_entrega', null)
+ 2 APPPATH/Controllers/Home.php(14): CodeIgniter\Model->__call('like', [...])
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-21 17:31:38 --> CodeIgniter\Database\BaseBuilder::like(): Argument #2 ($match) must be of type string, null given, called in /opt/lampp/htdocs/system/Model.php on line 840
+in SYSTEMPATH/Database/BaseBuilder.php on line 984.
+ 1 SYSTEMPATH/Model.php(840): CodeIgniter\Database\BaseBuilder->like('local_de_entrega', null)
+ 2 APPPATH/Controllers/Home.php(14): CodeIgniter\Model->__call('like', [...])
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-21 20:13:41 --> syntax error, unexpected token "<", expecting end of file
+in APPPATH/Views/index.php on line 70.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('index', [], true)
+ 3 APPPATH/Controllers/Home.php(9): view('index')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-21 20:14:09 --> Undefined property: stdClass::$title
+in APPPATH/Views/index.php on line 65.
+ 1 APPPATH/Views/index.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$title', 'APPPATH/Views/index.php', 65)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH/Controllers/Home.php(9): view('index')
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-21 20:14:30 --> Undefined property: stdClass::$nome
+in APPPATH/Views/index.php on line 65.
+ 1 APPPATH/Views/index.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nome', 'APPPATH/Views/index.php', 65)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH/Controllers/Home.php(9): view('index')
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-21 20:14:48 --> Undefined property: stdClass::$email
+in APPPATH/Views/index.php on line 67.
+ 1 APPPATH/Views/index.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$email', 'APPPATH/Views/index.php', 67)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH/Controllers/Home.php(9): view('index')
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-21 20:24:08 --> Call to undefined function dotenv()
+in APPPATH/Views/index.php on line 61.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH/Controllers/Home.php(9): view('index')
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-21 20:24:37 --> Call to undefined function dotenv()
+in APPPATH/Views/index.php on line 61.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH/Controllers/Home.php(9): view('index')
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-21 20:25:54 --> Call to undefined function dotenv()
+in APPPATH/Views/index.php on line 69.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH/Controllers/Home.php(9): view('index')
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-21 20:26:26 --> Call to undefined function dotenv()
+in APPPATH/Views/index.php on line 69.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH/Controllers/Home.php(9): view('index')
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-21 20:26:38 --> Call to undefined function dotenv()
+in APPPATH/Views/index.php on line 69.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH/Controllers/Home.php(9): view('index')
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-21 20:26:39 --> Call to undefined function dotenv()
+in APPPATH/Views/index.php on line 69.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH/Controllers/Home.php(9): view('index')
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

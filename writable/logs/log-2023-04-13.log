@@ -1,0 +1,243 @@
+CRITICAL - 2023-04-13 20:12:42 --> syntax error, unexpected token "<"
+in APPPATH/Controllers/Home.php on line 77.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/Home.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH/CodeIgniter.php(892): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH/CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-13 20:17:21 --> Unclosed '{' on line 62
+in APPPATH/Views/admin.php on line 100.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('admin', [], true)
+ 3 APPPATH/Controllers/Home.php(78): view('admin')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->admin()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-13 20:18:06 --> Unclosed '{' on line 62
+in APPPATH/Views/admin.php on line 99.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('admin', [], true)
+ 3 APPPATH/Controllers/Home.php(78): view('admin')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->admin()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-13 20:23:56 --> syntax error, unexpected identifier "Urgente", expecting "," or ";"
+in APPPATH/Views/admin.php on line 50.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('admin', [], true)
+ 3 APPPATH/Controllers/Home.php(78): view('admin')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->admin()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-13 20:24:17 --> syntax error, unexpected identifier "Urgente", expecting "," or ";"
+in APPPATH/Views/admin.php on line 50.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('admin', [], true)
+ 3 APPPATH/Controllers/Home.php(78): view('admin')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->admin()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-13 20:25:35 --> syntax error, unexpected identifier "Urgente", expecting "," or ";"
+in APPPATH/Views/admin.php on line 50.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('admin', [], true)
+ 3 APPPATH/Controllers/Home.php(78): view('admin')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->admin()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-13 20:28:15 --> Undefined array key "id"
+in APPPATH/Views/admin.php on line 57.
+ 1 APPPATH/Views/admin.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH/Views/admin.php', 57)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('admin', [], true)
+ 5 APPPATH/Controllers/Home.php(78): view('admin')
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->admin()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-13 20:29:23 --> Undefined array key "nome"
+in APPPATH/Views/admin.php on line 56.
+ 1 APPPATH/Views/admin.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nome"', 'APPPATH/Views/admin.php', 56)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('admin', [], true)
+ 5 APPPATH/Controllers/Home.php(78): view('admin')
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->admin()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-13 20:44:17 --> Undefined property: stdClass::$nome
+in APPPATH/Views/admin.php on line 118.
+ 1 APPPATH/Views/admin.php(118): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nome', 'APPPATH/Views/admin.php', 118)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('admin', [], true)
+ 5 APPPATH/Controllers/Home.php(78): view('admin')
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->admin()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-13 20:48:26 --> syntax error, unexpected token "echo", expecting "," or ";"
+in APPPATH/Views/admin.php on line 121.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('admin', [], true)
+ 3 APPPATH/Controllers/Home.php(78): view('admin')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->admin()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-13 21:47:28 --> mysqli_sql_exception: Unknown column 'p.entregador_id' in 'on clause' in /opt/lampp/htdocs/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT p.*, e.n...', 0)
+#1 /opt/lampp/htdocs/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p.*, e.n...')
+#2 /opt/lampp/htdocs/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p.*, e.n...')
+#3 /opt/lampp/htdocs/app/Views/admin.php(309): CodeIgniter\Database\BaseConnection->query('SELECT p.*, e.n...')
+#4 /opt/lampp/htdocs/system/View/View.php(213): include('/opt/lampp/htdo...')
+#5 /opt/lampp/htdocs/system/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 /opt/lampp/htdocs/system/Common.php(1184): CodeIgniter\View\View->render('admin', Array, true)
+#7 /opt/lampp/htdocs/app/Controllers/Home.php(78): view('admin')
+#8 /opt/lampp/htdocs/system/CodeIgniter.php(934): App\Controllers\Home->admin()
+#9 /opt/lampp/htdocs/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 /opt/lampp/htdocs/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /opt/lampp/htdocs/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-04-13 21:47:28 --> Unknown column 'p.entregador_id' in 'on clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 APPPATH/Views/admin.php(309): CodeIgniter\Database\BaseConnection->query('SELECT p.*, e.nome as entregador_nome FROM pedidos p INNER JOIN entregadores e ON p.entregador_id = e.id WHERE p.status = "entregue"')
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('admin', [], true)
+ 5 APPPATH/Controllers/Home.php(78): view('admin')
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->admin()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-13 21:49:03 --> Undefined property: stdClass::$entregador_nome
+in APPPATH/Views/admin.php on line 323.
+ 1 APPPATH/Views/admin.php(323): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$entregador_nome', 'APPPATH/Views/admin.php', 323)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('admin', [], true)
+ 5 APPPATH/Controllers/Home.php(78): view('admin')
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->admin()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-13 22:18:29 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`teste`.`pedidos`, CONSTRAINT `pedidos_ibfk_2` FOREIGN KEY (`id_entregador`) REFERENCES `entregadores` (`id`)) in /opt/lampp/htdocs/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/system/Database/MySQLi/Connection.php(295): mysqli->query('DELETE FROM `en...', 0)
+#1 /opt/lampp/htdocs/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `en...')
+#2 /opt/lampp/htdocs/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `en...')
+#3 /opt/lampp/htdocs/system/Database/BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `en...', Array, false)
+#4 /opt/lampp/htdocs/app/Controllers/Admin.php(56): CodeIgniter\Database\BaseBuilder->delete()
+#5 /opt/lampp/htdocs/system/CodeIgniter.php(934): App\Controllers\Admin->entregador()
+#6 /opt/lampp/htdocs/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /opt/lampp/htdocs/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-13 22:18:29 --> Cannot delete or update a parent row: a foreign key constraint fails (`teste`.`pedidos`, CONSTRAINT `pedidos_ibfk_2` FOREIGN KEY (`id_entregador`) REFERENCES `entregadores` (`id`))
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `entregadores`
+WHERE `id` = :id:', [...], false)
+ 2 APPPATH/Controllers/Admin.php(56): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->entregador()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-13 22:18:36 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`teste`.`pedidos`, CONSTRAINT `pedidos_ibfk_2` FOREIGN KEY (`id_entregador`) REFERENCES `entregadores` (`id`)) in /opt/lampp/htdocs/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/system/Database/MySQLi/Connection.php(295): mysqli->query('DELETE FROM `en...', 0)
+#1 /opt/lampp/htdocs/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `en...')
+#2 /opt/lampp/htdocs/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `en...')
+#3 /opt/lampp/htdocs/system/Database/BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `en...', Array, false)
+#4 /opt/lampp/htdocs/app/Controllers/Admin.php(56): CodeIgniter\Database\BaseBuilder->delete()
+#5 /opt/lampp/htdocs/system/CodeIgniter.php(934): App\Controllers\Admin->entregador()
+#6 /opt/lampp/htdocs/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /opt/lampp/htdocs/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-13 22:18:36 --> Cannot delete or update a parent row: a foreign key constraint fails (`teste`.`pedidos`, CONSTRAINT `pedidos_ibfk_2` FOREIGN KEY (`id_entregador`) REFERENCES `entregadores` (`id`))
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `entregadores`
+WHERE `id` = :id:', [...], false)
+ 2 APPPATH/Controllers/Admin.php(56): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->entregador()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-04-13 22:18:50 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`teste`.`pedidos`, CONSTRAINT `pedidos_ibfk_2` FOREIGN KEY (`id_entregador`) REFERENCES `entregadores` (`id`)) in /opt/lampp/htdocs/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/system/Database/MySQLi/Connection.php(295): mysqli->query('DELETE FROM `en...', 0)
+#1 /opt/lampp/htdocs/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `en...')
+#2 /opt/lampp/htdocs/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `en...')
+#3 /opt/lampp/htdocs/system/Database/BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `en...', Array, false)
+#4 /opt/lampp/htdocs/app/Controllers/Admin.php(56): CodeIgniter\Database\BaseBuilder->delete()
+#5 /opt/lampp/htdocs/system/CodeIgniter.php(934): App\Controllers\Admin->entregador()
+#6 /opt/lampp/htdocs/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 /opt/lampp/htdocs/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-04-13 22:18:50 --> Cannot delete or update a parent row: a foreign key constraint fails (`teste`.`pedidos`, CONSTRAINT `pedidos_ibfk_2` FOREIGN KEY (`id_entregador`) REFERENCES `entregadores` (`id`))
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `entregadores`
+WHERE `id` = :id:', [...], false)
+ 2 APPPATH/Controllers/Admin.php(56): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin->entregador()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-13 22:36:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-04-13 23:09:21 --> syntax error, unexpected token "else", expecting "function" or "const"
+in APPPATH/Controllers/Entregador.php on line 26.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/Entregador.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Entregador')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Entregador')
+ 4 SYSTEMPATH/CodeIgniter.php(892): class_exists('\\App\\Controllers\\Entregador', true)
+ 5 SYSTEMPATH/CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-13 23:09:49 --> Undefined variable $entid
+in APPPATH/Controllers/Entregador.php on line 10.
+ 1 APPPATH/Controllers/Entregador.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $entid', 'APPPATH/Controllers/Entregador.php', 10)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Entregador->entregador()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Entregador))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-04-13 23:11:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-13 23:11:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-13 23:11:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-13 23:12:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-13 23:12:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-13 23:12:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-13 23:12:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-13 23:17:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-13 23:36:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-13 23:39:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-13 23:41:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-13 23:42:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-13 23:44:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-13 23:44:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-13 23:45:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-13 23:50:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-13 23:51:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-13 23:51:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-13 23:52:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-13 23:52:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-13 23:57:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-13 23:57:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-13 23:57:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-13 23:58:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-13 23:58:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-13 23:58:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-13 23:58:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-13 23:59:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-13 23:59:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-04-13 23:59:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
