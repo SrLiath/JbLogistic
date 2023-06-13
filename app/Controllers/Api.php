@@ -205,10 +205,8 @@ class Api extends BaseController
 
                     if ($distancia <= 4) {
                         $valor = 10.9;
-                    } elseif ($distancia <= 10) {
-                        $valor = 10.9 + (($distancia - 4) * 1.35);
                     } elseif ($distancia > 10) {
-                        $valor = 18.4 + (($distancia - 10) * 1.15);
+                        $valor = 10.9 + (($distancia - 4) * 1.30);
                     }
                     if ($urgencia == 1) {
                         $valor = $valor*1.1;

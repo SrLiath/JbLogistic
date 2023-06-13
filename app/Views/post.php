@@ -108,8 +108,7 @@ form.addEventListener('keydown', function(event) {
         nome_recebedor: $('#nome_recebedor').val(),
       },
       success: function(response) {
-        console.log(response);
-        alert('Pedido inserido com sucesso!');
+        alert(response);
        window.location.href = "<?= base_url('painel'); ?>";
       },
       error: function(xhr, status, error) {

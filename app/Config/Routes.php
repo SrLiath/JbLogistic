@@ -38,7 +38,7 @@ $routes->get('/entregador', 'Entregador::entregador');
 $routes->get('/entregador/download/(:num)/mes/(:num)/ano/(:num)', 'Entregador::download/$1/$2/$3');
 
 //admin
-$routes->get('/admin/pdf/(:num)/id/(:num)/mes/(:num)/download', 'Admin::download/$1/$2/$3');
+$routes->get('/admin/pdf/(:num)/id/(:num)/mes/(:num)/(:num)/download', 'Admin::download/$1/$2/$3/$4');
 $routes->get('/admin', 'Admin::adminv');
 $routes->post('/admins', 'Admin::admin');
 //api

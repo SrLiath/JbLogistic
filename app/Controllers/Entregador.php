@@ -36,9 +36,10 @@ class Entregador extends BaseController
                     $pedidos = $db->table('pedidos')
                                ->select('pedidos.*, usuarios.nome as nome_usuario')
                                ->join('usuarios', 'pedidos.id_usuario = usuarios.id')
-                               ->where('pedidos.status', 'A caminho de entrega')
-                               ->orwhere('pedidos.status', 'Aguardando usuario')
+                               ->where('pedidos.status <>', 'Entregue')
+                               ->where('pedidos.status <>', 'Cancelado')
                                ->where('pedidos.id_entregador', $entid)
+
                                ->get()
                                ->getResult();
                     $atribuir = $db->table('pedidos')
@@ -56,8 +57,10 @@ class Entregador extends BaseController
                         $pedidos = $db->table('pedidos')
                                    ->select('pedidos.*, usuarios.nome as nome_usuario')
                                    ->join('usuarios', 'pedidos.id_usuario = usuarios.id')
-                                   ->where('pedidos.status', 'Aguardando usuario')
-                                   ->orwhere('pedidos.status', 'A caminho de entrega')
+                                   ->where('pedidos.status <>', 'Entregue')
+                                   ->where('pedidos.status <>', 'Cancelado')
+
+
 
                                    ->where('pedidos.id_entregador', $entid)
                                    ->get()

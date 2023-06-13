@@ -117,7 +117,7 @@
   <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h4 class="modal-title" id="myModalLabel2">Usuarios</h4>
+        <h4 class="modal-title" id="myModalLabel2">Clientes</h4>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -361,16 +361,23 @@ $(document).ready(function() {
 
   $(document).on('click', '.btn-relatorio-entre', function() {
   var entregadorId = $(this).data('id_entregador');
-  var data = $('#data-relatorio').val().substring(5, 7);
+  var dataString = $('#data-relatorio').val(); // string da data no formato "yyyy-mm-dd"
+var data = new Date(dataString); // cria um objeto Date com a string da data
+var ano = data.getFullYear().toString().substr(-4); // extrai os dois últimos dígitos do ano
+var mes = (data.getMonth() + 1).toString().padStart(2, '0'); // extrai o mês e adiciona um zero à esquerda se necessário
+
   var choice = 1;
-var novaJanela = window.open('<?= base_url()?>admin/pdf/'+ choice +'/id/'+ entregadorId +'/mes/'+ data +'/download');
+var novaJanela = window.open('<?= base_url()?>admin/pdf/'+ choice +'/id/'+ entregadorId +'/mes/'+ mes +'/'+ ano +'/download');
 
 });
 $(document).on('click', '.btn-relatorio-usu', function() {
   var entregadorId = $(this).data('id_usuario');
-  var data = $('#data-relatorio').val().substring(5, 7);
+  var dataString = $('#data-relatorio').val(); // string da data no formato "yyyy-mm-dd"
+var data = new Date(dataString); // cria um objeto Date com a string da data
+var ano = data.getFullYear().toString().substr(-4); // extrai os dois últimos dígitos do ano
+var mes = (data.getMonth() + 1).toString().padStart(2, '0'); // extrai o mês e adiciona um zero à esquerda se necessário
   var choice = 2;
-var novaJanela = window.open('<?= base_url()?>admin/pdf/'+ choice +'/id/'+ entregadorId +'/mes/'+ data +'/download');
+  var novaJanela = window.open('<?= base_url()?>admin/pdf/'+ choice +'/id/'+ entregadorId +'/mes/'+ mes +'/'+ ano +'/download');
 
 });
 
