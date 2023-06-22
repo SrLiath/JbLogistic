@@ -43,6 +43,8 @@ $routes->get('/admin', 'Admin::adminv');
 $routes->post('/admins', 'Admin::admin');
 //api
 $routes->post('/econfirmentregadorapi', 'Entregador::confirmentregadorapi');
+$routes->post('/declineentregadorapi', 'Entregador::declineentregadorapi');
+$routes->post('/coletaconfirmapi', 'Entregador::coletaconfirmapi');
 $routes->post('/confirmentregadorapi', 'Admin::confirmentregadorapi');
 $routes->post('/apirastreio', 'Api::apirastreio');
 $routes->post('/apilc', 'Api::apilc');

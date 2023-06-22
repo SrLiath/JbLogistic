@@ -132,10 +132,15 @@
            <?php if ($value == 2) { ?>
     <td>
         <form method="post">
-            <button type="button" class="btn btn-success" data-pedido-id="<?php echo $pedido->id; ?>" data-toggle="modal" data-target="#finalizar-modal">Finalizar</button>
+       <?php if($pedido->status == 'Aguardando coleta'){?>
+          <button type="button" class="btn btn-success coletar-btn" data-pedido-id="<?php echo $pedido->id; ?>" data-toggle="modal" data-target="#coleta-modal" onclick='exec("<?= $pedido->id ?>")'>Coletar</button>
+
+          <?php }else{?>
+          <button type="button" class="btn btn-success" data-pedido-id="<?php echo $pedido->id; ?>" data-toggle="modal" data-target="#finalizar-modal">Finalizar</button>
+        <?php }?>
         </form>
-    </td>
-<?php }else{echo "<td></td>";}; ?>
+            </td>
+        <?php }else{echo "<td></td>";}; ?>
             <td><?php echo $pedido->repasse; ?></td>
             <?php echo '<td><button><a href="https://www.google.com/maps/dir/'. $pedido->local_de_busca .'/'. $pedido->local_de_entrega .'" target="_blank">Rota</a></button></td>';?>
             <?php endforeach; ?>
@@ -153,7 +158,59 @@
             <td><?php echo $pedido->tamanho_pacote; ?></td>
             <td></td>
             <td>
-            <button type="button" class="btn btn-primary btn-atribuir" data-pedidoid="<?php echo $pedido->id; ?>">Aceitar</button>
+            <button type="button" class="btn btn-primary btn-atribuir" data-pedidoid="<?php echo $pedido->id; ?>">Aceitar/Negar</button>
+
+            <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script>
+     
+
+  // Evento de clique para o botão de atribuir
+  $(document).on("click", ".btn-atribuir", function() {
+    var pedidoId = $(this).data('pedidoid');
+    Swal.fire({
+      title: 'Deseja aceitar a corrida?',
+      showCancelButton: true,
+      confirmButtonText: 'Sim',
+      cancelButtonText: 'Não',
+      showLoaderOnConfirm: true,
+      preConfirm: function(choice) {
+
+      }
+    })
+    .then(function(result) {
+      if (result.isConfirmed) {
+        // Lógica de sucesso
+        $.ajax({
+          url: '<?= base_url('econfirmentregadorapi')?>',
+          method: 'POST',
+          data: { pedidoId: pedidoId },
+          success: function(response) {
+            // Lógica para lidar com a resposta do servidor
+            location.reload();
+          },
+          error: function(xhr, status, error) {
+            // Lógica para lidar com erros de solicitação
+          }
+        });
+      } else {
+        $.ajax({
+          url: '<?= base_url('declineentregadorapi')?>',
+          method: 'POST',
+          data: { pedidoId: pedidoId },
+          success: function(response) {
+            // Lógica para lidar com a resposta do servidor
+            location.reload();
+          },
+          error: function(xhr, status, error) {
+            console.log(xhr.responseText);
+          }
+        });
+      }
+    });
+  });
+
+</script>
 
             </td>
 
@@ -186,27 +243,66 @@
     </div>
 </div>
 
+<div class="modal fade" id="coleta-modal" tabindex="-1" aria-labelledby="coleta-modal-label" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="coleta-modal-label">Dados do recebedor</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Nome:</p>
+        <input type="text" id="coletanome-input" class="form-control" placeholder="Insira o nome do cliente">                
+        <p>Documento:</p>
+        <input type="text" id="coletadoc-input" class="form-control" placeholder="Insira o documento do cliente">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-primary" id="coleta-submit">Confirmar</button>
+      </div>
+    </div>
+  </div>
+</div>
 
           </tr>
       </tbody>
     </table>
   </div>
   <script>
-      $(document).ready(function() {
+    var suporte;
+    
+    function exec(id){
+      suporte = id;
+    }
 
-        //atribuir entrega
-        $('.btn-atribuir').on('click', function() {
-    var pedidoId = $(this).data('pedidoid');
+    $(document).on("click", "#coleta-submit", function() {
+    // Obtenha o ID do pedido e os valores dos inputs
+    var pedidoId = suporte;
+    var nome = $("#coletanome-input").val();
+    var documento = $("#coletadoc-input").val();
+
+
+    // Crie um objeto de dados para enviar os dados
+    var data = {
+      pedidoId: pedidoId,
+      nome: nome,
+      documento: documento
+    };
+
+    // Faça a solicitação AJAX
     $.ajax({
-      url: '<?= base_url('econfirmentregadorapi')?>',
-      method: 'POST',
-      data: { pedidoId: pedidoId },
+      type: "POST",
+      url: "<?= base_url('coletaconfirmapi') ?>",
+      data: data,
       success: function(response) {
-        // Lógica para lidar com a resposta do servidor
-        location.reload();
+   location.reload();
+        console.log(response);
       },
       error: function(xhr, status, error) {
-        // Lógica para lidar com erros de solicitação
+        // Houve um erro na solicitação AJAX
+        console.error("Erro na solicitação AJAX. Status: " + xhr.responseText);
       }
     });
   });
@@ -325,7 +421,7 @@ window.onclick = function(event) {
             var pedidoId = $('.btn-success').data('pedido-id');
             var inputVal = $('#finalizar-input').val();
         });
-    });
+
 
   </script>
 </body>

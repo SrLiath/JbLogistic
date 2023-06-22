@@ -132,7 +132,7 @@ public function confirmentregadorapi()
             echo "concluido";}else{
                 $builder = $db->table('pedidos');
                 $pedido_id = $_POST['pedidoId'];
-                $data = ['status' => 'Aguardando usuario',
+                $data = ['status' => 'Aguardando coleta',
                          'id_entregador' => $entid,
                          'vision' => '0'
                 ];
@@ -231,4 +231,55 @@ public function download($id, $mes, $ano)
 
 
 }
+    public function declineentregadorapi()
+    {
+        $entid = session()->get('entid');
+        $elogin = session()->get('elogin');
+        $password = session()->get('password');
+        if($entid == "" || $elogin == ""|| $password == "") {
+            die();
+        } else {
+            $db = \Config\Database::connect();
+            $logine = $db->table('entregadores')->where('email', $elogin)->where('senha', $password)->countAllResults();
+            if ($logine == 1) {
+    
+                $db->query("UPDATE pedidos SET vision = REPLACE(vision, ';" . $entid . ";', ';')");
+    
+            } else {
+                die();
+            }
+        }
+    }
+
+    public function coletaconfirmapi()
+    {
+        $entid = session()->get('entid');
+        $elogin = session()->get('elogin');
+        $password = session()->get('password');
+        if($entid == "" || $elogin == ""|| $password == "") {
+            die();
+        } else {
+            $db = \Config\Database::connect();
+            $logine = $db->table('entregadores')->where('email', $elogin)->where('senha', $password)->countAllResults();
+            if ($logine == 1) {
+                $pedidoId = $_POST['pedidoId'];
+                $nome = $_POST['nome'];
+                $documento = $_POST['documento'];
+    
+                // Insert the data into the database
+                $data = [
+                    'doc_env' => $documento,
+                    'nome_env' => $nome,
+                    'status' => 'Coletado, a caminho'
+                ];
+    
+                $db->table('pedidos')->where('id', $pedidoId)->update($data);
+                echo "okay";
+
+
+            } else {
+                die();
+            }
+        }
+    }
 }

@@ -45,6 +45,8 @@ CREATE TABLE IF NOT EXISTS pedidos (
   recebedor varchar(50) NOT NULL,
   nome_recebedor varchar(50),
   doc_recebedor varchar(50),
+  doc_env varchar(50),
+  nome_env varchar(50),
   vision varchar(700)
 );
 
