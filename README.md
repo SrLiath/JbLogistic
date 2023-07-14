@@ -1,54 +1,24 @@
-# CodeIgniter 4 Framework
+# Sistema de Entrega em CodeIgniter 4
+Este é um sistema de entrega de produtos desenvolvido usando o framework CodeIgniter 4, jquery, bootstrap e mpdf. Ele permite que os usuários façam pedidos de produtos e acompanhem o status de entrega, com tela de login registro, acompanhamento, sistema de captação de distancia por km utilizando api do google MatrixDistance, painel admin, painel entregador, relatorios e edição de dados.
 
-## What is CodeIgniter?
+## Pré-requisitos
+PHP 7.2 ou superior
+Banco de dados MySQL ou outro suportado pelo CodeIgniter 4
+Composer para gerenciamento de dependências
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+### Sobre
+sistema descontinuado, imagens referentes:
 
-This repository holds the distributable version of the framework.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
-
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
-
-The user guide corresponding to the latest version of the framework can be found
-[here](https://codeigniter4.github.io/userguide/).
-
-## Important Change with index.php
-
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
-
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
-
-**Please** read the user guide for a better explanation of how CI4 works!
-
-## Repository Management
-
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
-
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
-
-## Contributing
-
-We welcome contributions from the community.
-
-Please read the [*Contributing to CodeIgniter*](https://github.com/codeigniter4/CodeIgniter4/blob/develop/CONTRIBUTING.md) section in the development repository.
-
-## Server Requirements
-
-PHP version 7.4 or higher is required, with the following extensions installed:
-
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
-
-Additionally, make sure that the following extensions are enabled in your PHP:
-
-- json (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+![Captura da Web_14-7-2023_01524_localhost](https://github.com/SrLiath/JbLogistic/assets/86482642/425549c0-5cd5-4cd1-9730-0d24b6e030fd)
+![Captura da Web_14-7-2023_02152_localhost](https://github.com/SrLiath/JbLogistic/assets/86482642/a0a07407-2dc2-44de-af9e-84a0ce678a1a)
+![Captura da Web_14-7-2023_02237_localhost](https://github.com/SrLiath/JbLogistic/assets/86482642/7ec89ebb-f853-4540-849d-18be9332e663)
+![Captura da Web_14-7-2023_02225_localhost](https://github.com/SrLiath/JbLogistic/assets/86482642/37d20c36-4423-491e-a03c-8b4568df92fd)
+![Captura da Web_14-7-2023_02329_localhost](https://github.com/SrLiath/JbLogistic/assets/86482642/2683f81b-79d5-4bf2-95c1-4b8c5789ea78)
+![Captura da Web_14-7-2023_0169_localhost](https://github.com/SrLiath/JbLogistic/assets/86482642/7e101f92-71dd-403b-9bea-8545a5cffb5e)
+![Captura da Web_14-7-2023_01622_localhost](https://github.com/SrLiath/JbLogistic/assets/86482642/955d8df8-63ca-446a-8da2-58f60b8eabb6)
+![Captura da Web_14-7-2023_21427_localhost](https://github.com/SrLiath/JbLogistic/assets/86482642/8162fb1e-d9af-4d25-b713-e0d4de3484b4)
+![Captura da Web_14-7-2023_21314_localhost](https://github.com/SrLiath/JbLogistic/assets/86482642/f4c6522b-d864-446a-9130-1e805dcd6de6)
+![Captura da Web_14-7-2023_2123_localhost](https://github.com/SrLiath/JbLogistic/assets/86482642/25d05dda-3ab5-43bc-804a-5d62227e0cfb)
+![Captura da Web_14-7-2023_01546_localhost](https://github.com/SrLiath/JbLogistic/assets/86482642/17d32805-a3e9-4999-909a-9572820a820e)
+![Captura da Web_14-7-2023_02133_localhost](https://github.com/SrLiath/JbLogistic/assets/86482642/afc6e0d3-80d7-4dee-9d45-e325339ce5b2)
+![Captura da Web_14-7-2023_02120_localhost](https://github.com/SrLiath/JbLogistic/assets/86482642/85d0e12e-4ebe-4428-b2af-3d4c392377ff)
