@@ -18,6 +18,8 @@ phpunit.xml
 /app/Config/Database.php
 /app/Config/Email.php
 /app/Config/Routes.php
+/app/Config/App.php
+
 
 # Ignore NetBeans project folder
 /nbproject/

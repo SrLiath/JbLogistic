@@ -146,34 +146,35 @@ const destino = inputt.value;
     return;
   }
 
-  var service = new google.maps.DistanceMatrixService;
-  service.getDistanceMatrix({
-    origins: [origem],
-    destinations: [destino],
-    travelMode: 'DRIVING',
-    unitSystem: google.maps.UnitSystem.METRIC,
-    avoidHighways: false,
-    avoidTolls: false,
-    drivingOptions: {
-      departureTime: new Date(Date.now()),
-      trafficModel: 'bestguess'
-                    }
-    }, function(response, status) {
-    if (status !== "OK") {
-      alert(`Erro ao calcular a distância: ${status}`);
-    } else {
-      const distanciaKm = response.rows[0].elements[0].distance.value / 1000; // convertendo de metros para quilômetros
-      distancia = distanciaKm;
-      var valor = calcularValorCorrida(distanciaKm); // chamando a função calcularValorCorrida() para obter o valor da corrida
-    
+// Substitua 'sua-chave-de-api' pela chave de API válida do OpenRouteService
+const apiKey = '5b3ce3597851110001cf6248aee46a68a11648fdb1101b79560796f1';
+
+// Construa a URL da API Matrix do OpenRouteService
+const apiUrl = `https://api.openrouteservice.org/v2/matrix/driving-car?api_key=${apiKey}&profile=driving-car&locations=${origem[0]},${origem[1]}|${destino[0]},${destino[1]}`;
+
+// Faça uma solicitação HTTP para a API do OpenRouteService Matrix
+fetch(apiUrl)
+  .then(response => response.json())
+  .then(data => {
+    // Verifique se a resposta é bem-sucedida
+    if (data.status === 'OK') {
+      const distanciaMetros = data.distances[0][1]; // Obtenha a distância em metros
+      const distanciaKm = distanciaMetros / 1000; // Converta de metros para quilômetros
+      const valor = calcularValorCorrida(distanciaKm); // Chame a função calcularValorCorrida() para obter o valor da corrida
 
       document.getElementById("map").innerHTML = "";
-      document.getElementById("map").insertAdjacentHTML("afterbegin", `<a style="top:0px;     margin-bottom: 0px;">Distância: ${response.rows[0].elements[0].distance.text}. Valor: R$ ${valor}*.</a>`);
+      document.getElementById("map").insertAdjacentHTML("afterbegin", `<a style="top:0px; margin-bottom: 0px;">Distância: ${distanciaKm.toFixed(2)} km. Valor: R$ ${valor}*</a>`);
       document.getElementById("zap").innerHTML = "";
-      document.getElementById("zap").insertAdjacentHTML("afterbegin", `<p style="font-size:10px; top:0px;     margin-bottom: 0px;"> *valor sujeito a pedagio </p>`);
+      document.getElementById("zap").insertAdjacentHTML("afterbegin", `<p style="font-size:10px; top:0px; margin-bottom: 0px;"> *valor sujeito a pedágio </p>`);
+    } else {
+      alert(`Erro ao calcular a distância: ${data.status}`);
     }
+  })
+  .catch(error => {
+    console.error('Erro na solicitação OpenRouteService Matrix:', error);
+    alert('Erro na solicitação OpenRouteService Matrix. Consulte o console para obter detalhes.');
   });
-}
+      }
 
 function calcularValorCorrida(distanciaKm) {
   let valor = 0;

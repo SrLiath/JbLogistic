@@ -55,3 +55,8 @@ in SYSTEMPATH\Router\RouteCollection.php on line 285.
  7 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
  8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-18 04:56:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-18 04:56:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-18 04:56:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-18 04:56:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-18 05:05:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
