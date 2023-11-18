@@ -120,10 +120,17 @@ class Forge extends BaseForge
                 // If a null constraint is added to a column with a null constraint,
                 // ORA-01451 will occur,
                 // so add null constraint is used only when it is different from the current null constraint.
-                $isWantToAddNull    = strpos($field[$i]['null'], ' NOT') === false;
-                $currentNullAddable = $nullableMap[$field[$i]['name']];
+                // If a not null constraint is added to a column with a not null constraint,
+                // ORA-01442 will occur.
+                $wantToAddNull   = strpos($field[$i]['null'], ' NOT') === false;
+                $currentNullable = $nullableMap[$field[$i]['name']];
 
-                if ($isWantToAddNull === $currentNullAddable) {
+                if ($wantToAddNull === true && $currentNullable === true) {
+                    $field[$i]['null'] = '';
+                } elseif ($field[$i]['null'] === '' && $currentNullable === false) {
+                    // Nullable by default
+                    $field[$i]['null'] = ' NULL';
+                } elseif ($wantToAddNull === false && $currentNullable === false) {
                     $field[$i]['null'] = '';
                 }
             }
@@ -180,7 +187,7 @@ class Forge extends BaseForge
     protected function _processColumn(array $field): string
     {
         $constraint = '';
-        // @todo: can’t cover multi pattern when set type.
+        // @todo: can't cover multi pattern when set type.
         if ($field['type'] === 'VARCHAR2' && strpos($field['length'], "('") === 0) {
             $constraint = ' CHECK(' . $this->db->escapeIdentifiers($field['name'])
                 . ' IN ' . $field['length'] . ')';
@@ -211,19 +218,24 @@ class Forge extends BaseForge
         switch (strtoupper($attributes['TYPE'])) {
             case 'TINYINT':
                 $attributes['CONSTRAINT'] ??= 3;
+
                 // no break
             case 'SMALLINT':
                 $attributes['CONSTRAINT'] ??= 5;
+
                 // no break
             case 'MEDIUMINT':
                 $attributes['CONSTRAINT'] ??= 7;
+
                 // no break
             case 'INT':
             case 'INTEGER':
                 $attributes['CONSTRAINT'] ??= 11;
+
                 // no break
             case 'BIGINT':
                 $attributes['CONSTRAINT'] ??= 19;
+
                 // no break
             case 'NUMERIC':
                 $attributes['TYPE'] = 'NUMBER';
@@ -254,6 +266,7 @@ class Forge extends BaseForge
             case 'ENUM':
             case 'VARCHAR':
                 $attributes['CONSTRAINT'] ??= 255;
+
                 // no break
             case 'TEXT':
             case 'MEDIUMTEXT':

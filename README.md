@@ -1,20 +1,59 @@
-# Delivery System in CodeIgniter 4
-This is a product delivery system developed using the CodeIgniter 4 framework, jquery, bootstrap and mpdf. It allows users to order products and monitor the delivery status, with a login screen for registration, monitoring, a system for capturing distance per km using the google MatrixDistance API, admin panel, delivery panel, reports and data editing.
+# CodeIgniter 4 Framework
 
-## Prerequisites
-PHP 7.2 or higher
-MySQL or other database supported by CodeIgniter 4
-Composer for dependency management
+## What is CodeIgniter?
 
-### About
-discontinued system, referring pictures
+CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
+More information can be found at the [official site](https://codeigniter.com).
 
-![Captura da Web_14-7-2023_01524_localhost](https://github.com/SrLiath/JbLogistic/assets/86482642/df03b248-6260-4848-8cb3-e1dc0f5bb312)
-![Captura da Web_14-7-2023_21314_localhost](https://github.com/SrLiath/JbLogistic/assets/86482642/552f83c7-9fd5-454d-b011-775ff07f8d89)
-![Captura da Web_14-7-2023_0169_localhost](https://github.com/SrLiath/JbLogistic/assets/86482642/4a1a591a-f23e-4ee1-a7d3-3cc125d38a3c)
-![Captura da Web_14-7-2023_01622_localhost](https://github.com/SrLiath/JbLogistic/assets/86482642/0af790bd-a3e6-4634-a5f4-668d4356a928)
-![Captura da Web_14-7-2023_02133_localhost](https://github.com/SrLiath/JbLogistic/assets/86482642/0efbf461-adca-468a-b37c-a458e2151001)
-![Captura da Web_14-7-2023_21427_localhost](https://github.com/SrLiath/JbLogistic/assets/86482642/5b2a3157-6f87-4851-9d25-1c61e5428506)
-![Captura da Web_14-7-2023_02120_localhost](https://github.com/SrLiath/JbLogistic/assets/86482642/e18a0a3e-7f45-4cb5-888e-d4f1cb97f237)
-![Captura da Web_14-7-2023_02152_localhost](https://github.com/SrLiath/JbLogistic/assets/86482642/84da4353-32d3-4047-9dd8-dd7a0b62e06c)
-![Captura da Web_14-7-2023_02225_localhost](https://github.com/SrLiath/JbLogistic/assets/86482642/24bae09e-471f-49d4-acc6-82401b153481)
+This repository holds the distributable version of the framework.
+It has been built from the
+[development repository](https://github.com/codeigniter4/CodeIgniter4).
+
+More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
+
+The user guide corresponding to the latest version of the framework can be found
+[here](https://codeigniter4.github.io/userguide/).
+
+## Important Change with index.php
+
+`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
+for better security and separation of components.
+
+This means that you should configure your web server to "point" to your project's *public* folder, and
+not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
+framework are exposed.
+
+**Please** read the user guide for a better explanation of how CI4 works!
+
+## Repository Management
+
+We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
+We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
+FEATURE REQUESTS.
+
+This repository is a "distribution" one, built by our release preparation script.
+Problems with it can be raised on our forum, or as issues in the main repository.
+
+## Contributing
+
+We welcome contributions from the community.
+
+Please read the [*Contributing to CodeIgniter*](https://github.com/codeigniter4/CodeIgniter4/blob/develop/CONTRIBUTING.md) section in the development repository.
+
+## Server Requirements
+
+PHP version 7.4 or higher is required, with the following extensions installed:
+
+- [intl](http://php.net/manual/en/intl.requirements.php)
+- [mbstring](http://php.net/manual/en/mbstring.installation.php)
+
+> **Warning**
+> The end of life date for PHP 7.4 was November 28, 2022. If you are
+> still using PHP 7.4, you should upgrade immediately. The end of life date
+> for PHP 8.0 will be November 26, 2023.
+
+Additionally, make sure that the following extensions are enabled in your PHP:
+
+- json (enabled by default - don't turn it off)
+- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
+- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library

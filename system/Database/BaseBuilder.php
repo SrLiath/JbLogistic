@@ -706,7 +706,6 @@ class BaseBuilder
      *
      * @param array|RawSql|string $key
      * @param mixed               $value
-     * @param bool                $escape
      *
      * @return $this
      */
@@ -1997,7 +1996,7 @@ class BaseBuilder
         }
 
         if (isset($this->QBOptions['setQueryAsData'])) {
-            $data = $this->QBOptions['setQueryAsData'];
+            $data = $this->QBOptions['setQueryAsData'] . "\n";
         } else {
             $data = 'VALUES ' . implode(', ', $this->formatValues($values)) . "\n";
         }
@@ -2021,9 +2020,9 @@ class BaseBuilder
     /**
      * Sets update fields for upsert, update
      *
-     * @param string|string[] $set
-     * @param bool            $addToDefault adds update fields to the default ones
-     * @param array|null      $ignore       ignores items in set
+     * @param RawSql[]|string|string[] $set
+     * @param bool                     $addToDefault adds update fields to the default ones
+     * @param array|null               $ignore       ignores items in set
      *
      * @return $this
      */
@@ -3079,6 +3078,10 @@ class BaseBuilder
             foreach ($this->{$qbKey} as &$qbkey) {
                 // Is this condition already compiled?
                 if (is_string($qbkey)) {
+                    continue;
+                }
+
+                if ($qbkey instanceof RawSql) {
                     continue;
                 }
 

@@ -142,7 +142,7 @@ class MigrationRunner
         $this->namespace = APP_NAMESPACE;
 
         // get default database group
-        $config      = config('Database');
+        $config      = config(Database::class);
         $this->group = $config->defaultGroup;
         unset($config);
 
@@ -220,9 +220,10 @@ class MigrationRunner
      *
      * Calls each migration step required to get to the provided batch
      *
-     * @param int $targetBatch Target batch number, or negative for a relative batch, 0 for all
+     * @param int         $targetBatch Target batch number, or negative for a relative batch, 0 for all
+     * @param string|null $group       Deprecated. The designation has no effect.
      *
-     * @return mixed Current batch number on success, FALSE on failure or no migrations are found
+     * @return bool True on success, FALSE on failure or no migrations are found
      *
      * @throws ConfigException
      * @throws RuntimeException
@@ -231,11 +232,6 @@ class MigrationRunner
     {
         if (! $this->enabled) {
             throw ConfigException::forDisabledMigrations();
-        }
-
-        // Set database group if not null
-        if ($group !== null) {
-            $this->setGroup($group);
         }
 
         $this->ensureTable();
@@ -844,7 +840,7 @@ class MigrationRunner
         }
 
         $instance = new $class();
-        $group    = $instance->getDBGroup() ?? config('Database')->defaultGroup;
+        $group    = $instance->getDBGroup() ?? config(Database::class)->defaultGroup;
 
         if (ENVIRONMENT !== 'testing' && $group === 'tests' && $this->groupFilter !== 'tests') {
             // @codeCoverageIgnoreStart

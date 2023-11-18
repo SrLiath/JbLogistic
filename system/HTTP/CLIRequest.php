@@ -25,6 +25,8 @@ use RuntimeException;
  * originally made available under.
  *
  * http://fuelphp.com
+ *
+ * @see \CodeIgniter\HTTP\CLIRequestTest
  */
 class CLIRequest extends Request
 {
@@ -71,6 +73,9 @@ class CLIRequest extends Request
         ignore_user_abort(true);
 
         $this->parseCommand();
+
+        // Set SiteURI for this request
+        $this->uri = new SiteURI($config, $this->getPath());
     }
 
     /**
@@ -175,6 +180,8 @@ class CLIRequest extends Request
      *
      * NOTE: I tried to use getopt but had it fail occasionally to find
      * any options, where argv has always had our back.
+     *
+     * @return void
      */
     protected function parseCommand()
     {
@@ -221,7 +228,7 @@ class CLIRequest extends Request
      *
      * @param array|string|null $index  Index for item to fetch from $_GET.
      * @param int|null          $filter A filter name to apply.
-     * @param mixed|null        $flags
+     * @param array|int|null    $flags
      *
      * @return array|null
      */
@@ -235,7 +242,7 @@ class CLIRequest extends Request
      *
      * @param array|string|null $index  Index for item to fetch from $_POST.
      * @param int|null          $filter A filter name to apply
-     * @param mixed             $flags
+     * @param array|int|null    $flags
      *
      * @return array|null
      */
@@ -249,7 +256,7 @@ class CLIRequest extends Request
      *
      * @param array|string|null $index  Index for item to fetch from $_POST or $_GET
      * @param int|null          $filter A filter name to apply
-     * @param mixed             $flags
+     * @param array|int|null    $flags
      *
      * @return array|null
      */
@@ -263,7 +270,7 @@ class CLIRequest extends Request
      *
      * @param array|string|null $index  Index for item to be fetched from $_GET or $_POST
      * @param int|null          $filter A filter name to apply
-     * @param mixed             $flags
+     * @param array|int|null    $flags
      *
      * @return array|null
      */

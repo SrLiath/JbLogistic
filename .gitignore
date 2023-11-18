@@ -1,0 +1,29 @@
+# CodeIgniter 4
+
+# Ignore application environment
+.env
+
+# Ignore writable directory
+writable/
+
+
+# Ignore Composer dependencies
+vendor/
+
+# Ignore PHPUnit configuration
+phpunit.xml
+
+# Ignore CodeIgniter generated files
+/app/Config/BaseConfig.php
+/app/Config/Database.php
+/app/Config/Email.php
+/app/Config/Routes.php
+
+# Ignore NetBeans project folder
+/nbproject/
+
+# Ignore Visual Studio Code settings
+.vscode/
+
+# Ignore Mac system files
+.DS_Store

@@ -12,12 +12,12 @@
 namespace CodeIgniter\Test;
 
 use CodeIgniter\Events\Events;
+use CodeIgniter\HTTP\CLIRequest;
+use CodeIgniter\HTTP\Exceptions\RedirectException;
 use CodeIgniter\HTTP\IncomingRequest;
-use CodeIgniter\HTTP\Request;
 use CodeIgniter\HTTP\URI;
 use CodeIgniter\HTTP\UserAgent;
-use CodeIgniter\Router\Exceptions\RedirectException;
-use CodeIgniter\Router\RouteCollection;
+use Config\App;
 use Config\Services;
 use Exception;
 use ReflectionException;
@@ -49,15 +49,13 @@ class FeatureTestCase extends CIUnitTestCase
      *    ['get', 'home', 'Home::index']
      * ]
      *
-     * @param array $routes
-     *
      * @return $this
      */
     protected function withRoutes(?array $routes = null)
     {
         $collection = Services::routes();
 
-        if ($routes) {
+        if ($routes !== null) {
             $collection->resetRoutes();
 
             foreach ($routes as $route) {
@@ -148,9 +146,6 @@ class FeatureTestCase extends CIUnitTestCase
      * instance that can be used to run many assertions against.
      *
      * @return FeatureResponse
-     *
-     * @throws Exception
-     * @throws RedirectException
      */
     public function call(string $method, string $path, ?array $params = null)
     {
@@ -294,7 +289,7 @@ class FeatureTestCase extends CIUnitTestCase
      */
     protected function setupRequest(string $method, ?string $path = null): IncomingRequest
     {
-        $config = config('App');
+        $config = config(App::class);
         $uri    = new URI(rtrim($config->baseURL, '/') . '/' . trim($path, '/ '));
 
         $request      = new IncomingRequest($config, clone $uri, null, new UserAgent());
@@ -330,11 +325,13 @@ class FeatureTestCase extends CIUnitTestCase
      *
      * Always populate the GET vars based on the URI.
      *
-     * @return Request
+     * @param CLIRequest|IncomingRequest $request
+     *
+     * @return CLIRequest|IncomingRequest
      *
      * @throws ReflectionException
      */
-    protected function populateGlobals(string $method, Request $request, ?array $params = null)
+    protected function populateGlobals(string $method, $request, ?array $params = null)
     {
         // $params should set the query vars if present,
         // otherwise set it from the URL.
@@ -359,10 +356,13 @@ class FeatureTestCase extends CIUnitTestCase
      * This allows the body to be formatted in a way that the controller is going to
      * expect as in the case of testing a JSON or XML API.
      *
-     * @param array|null $params The parameters to be formatted and put in the body. If this is empty, it will get the
-     *                           what has been loaded into the request global of the request class.
+     * @param CLIRequest|IncomingRequest $request
+     * @param array|null                 $params  The parameters to be formatted and put in the body. If this is empty, it will get the
+     *                                            what has been loaded into the request global of the request class.
+     *
+     * @return CLIRequest|IncomingRequest
      */
-    protected function setRequestBody(Request $request, ?array $params = null): Request
+    protected function setRequestBody($request, ?array $params = null)
     {
         if (isset($this->requestBody) && $this->requestBody !== '') {
             $request->setBody($this->requestBody);

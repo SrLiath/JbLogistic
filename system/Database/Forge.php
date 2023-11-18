@@ -153,7 +153,7 @@ class Forge
      *
      * @internal Used for marking nullable fields. Not covered by BC promise.
      */
-    protected $null = '';
+    protected $null = 'NULL';
 
     /**
      * DEFAULT value representation in CREATE/ALTER TABLE statements
@@ -562,7 +562,7 @@ class Forge
     }
 
     /**
-     * @return string
+     * @return string SQL string
      *
      * @deprecated $ifNotExists is no longer used, and will be removed.
      */
@@ -897,13 +897,19 @@ class Forge
             $this->_attributeDefault($attributes, $field);
 
             if (isset($attributes['NULL'])) {
+                $nullString = ' ' . $this->null;
+
                 if ($attributes['NULL'] === true) {
-                    $field['null'] = empty($this->null) ? '' : ' ' . $this->null;
+                    $field['null'] = empty($this->null) ? '' : $nullString;
+                } elseif ($attributes['NULL'] === $nullString) {
+                    $field['null'] = $nullString;
+                } elseif ($attributes['NULL'] === '') {
+                    $field['null'] = '';
                 } else {
-                    $field['null'] = ' NOT NULL';
+                    $field['null'] = ' NOT ' . $this->null;
                 }
             } elseif ($createTable === true) {
-                $field['null'] = ' NOT NULL';
+                $field['null'] = ' NOT ' . $this->null;
             }
 
             $this->_attributeAutoIncrement($attributes, $field);
@@ -1067,7 +1073,7 @@ class Forge
         $sqls = [];
         $fk   = $this->foreignKeys;
 
-        if (empty($this->fields)) {
+        if ($this->fields === []) {
             $this->fields = array_flip(array_map(
                 static fn ($columnName) => $columnName->name,
                 $this->db->getFieldData($this->db->DBPrefix . $table)
@@ -1076,20 +1082,18 @@ class Forge
 
         $fields = $this->fields;
 
-        if (! empty($this->keys)) {
+        if ($this->keys !== []) {
             $sqls = $this->_processIndexes($this->db->DBPrefix . $table, true);
+        }
 
-            $pk = $this->_processPrimaryKeys($table, true);
-
-            if ($pk !== '') {
-                $sqls[] = $pk;
-            }
+        if ($this->primaryKeys !== []) {
+            $sqls[] = $this->_processPrimaryKeys($table, true);
         }
 
         $this->foreignKeys = $fk;
         $this->fields      = $fields;
 
-        if (! empty($this->foreignKeys)) {
+        if ($this->foreignKeys !== []) {
             $sqls = array_merge($sqls, $this->_processForeignKeys($table, true));
         }
 

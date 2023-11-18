@@ -17,6 +17,8 @@ use CodeIgniter\Database\BaseResult;
  * HTML Table Generating Class
  *
  * Lets you create tables manually or from database result objects, or arrays.
+ *
+ * @see \CodeIgniter\View\TableTest
  */
 class Table
 {
@@ -82,6 +84,11 @@ class Table
      * @var callable|null
      */
     public $function;
+
+    /**
+     * Order each inserted row by heading keys
+     */
+    private bool $syncRowsWithHeading = false;
 
     /**
      * Set the template from the table config file if it exists
@@ -161,7 +168,8 @@ class Table
 
         // Turn off the auto-heading feature since it's doubtful we
         // will want headings from a one-dimensional array
-        $this->autoHeading = false;
+        $this->autoHeading         = false;
+        $this->syncRowsWithHeading = false;
 
         if ($columnLimit === 0) {
             return $array;
@@ -207,7 +215,40 @@ class Table
      */
     public function addRow()
     {
-        $this->rows[] = $this->_prepArgs(func_get_args());
+        $tmpRow = $this->_prepArgs(func_get_args());
+
+        if ($this->syncRowsWithHeading && ! empty($this->heading)) {
+            // each key has an index
+            $keyIndex = array_flip(array_keys($this->heading));
+
+            // figure out which keys need to be added
+            $missingKeys = array_diff_key($keyIndex, $tmpRow);
+
+            // Remove all keys which don't exist in $keyIndex
+            $tmpRow = array_filter($tmpRow, static fn ($k) => array_key_exists($k, $keyIndex), ARRAY_FILTER_USE_KEY);
+
+            // add missing keys to row, but use $this->emptyCells
+            $tmpRow = array_merge($tmpRow, array_map(fn ($v) => ['data' => $this->emptyCells], $missingKeys));
+
+            // order keys by $keyIndex values
+            uksort($tmpRow, static fn ($k1, $k2) => $keyIndex[$k1] <=> $keyIndex[$k2]);
+        }
+        $this->rows[] = $tmpRow;
+
+        return $this;
+    }
+
+    /**
+     * Set to true if each row column should be synced by keys defined in heading.
+     *
+     * If a row has a key which does not exist in heading, it will be filtered out
+     * If a row does not have a key which exists in heading, the field will stay empty
+     *
+     * @return $this
+     */
+    public function setSyncRowsWithHeading(bool $orderByKey)
+    {
+        $this->syncRowsWithHeading = $orderByKey;
 
         return $this;
     }
@@ -224,7 +265,7 @@ class Table
         // If there is no $args[0], skip this and treat as an associative array
         // This can happen if there is only a single key, for example this is passed to table->generate
         // array(array('foo'=>'bar'))
-        if (isset($args[0]) && count($args) === 1 && is_array($args[0]) && ! isset($args[0]['data'])) {
+        if (isset($args[0]) && count($args) === 1 && is_array($args[0])) {
             $args = $args[0];
         }
 
@@ -411,6 +452,8 @@ class Table
      * Set table data from a database result object
      *
      * @param BaseResult $object Database result object
+     *
+     * @return void
      */
     protected function _setFromDBResult($object)
     {
@@ -428,6 +471,8 @@ class Table
      * Set table data from an array
      *
      * @param array $data
+     *
+     * @return void
      */
     protected function _setFromArray($data)
     {
@@ -436,12 +481,14 @@ class Table
         }
 
         foreach ($data as &$row) {
-            $this->rows[] = $this->_prepArgs($row);
+            $this->addRow($row);
         }
     }
 
     /**
      * Compile Template
+     *
+     * @return void
      */
     protected function _compileTemplate()
     {
