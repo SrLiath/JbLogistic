@@ -169,7 +169,7 @@ class Api extends BaseController
                 $destino = urlencode($destino);
 
                 // Crie a URL da API do Google Maps com os locais e a chave de API
-                $url = "https://maps.googleapis.com/maps/api/distancematrix/json?origins=" . $origem . "&destinations=" . $destino . "&mode=driving&units=metric&key=AIzaSyCBSvYzwoqfIWLN7U30HqsQzzG9DYP6ZlA";
+                $url = "https://maps.googleapis.com/maps/api/distancematrix/json?origins=" . $origem . "&destinations=" . $destino . "&mode=driving&units=metric&key=AIzaSyDjWfywweufaGU7QzQhUuYWZZCoogOWb90";
 
                 // Use a função cURL para fazer uma solicitação à API do Google Maps
                 $curl = curl_init();
