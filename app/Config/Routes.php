@@ -16,6 +16,8 @@ $routes->get('/entregador/download/(:num)/mes/(:num)/ano/(:num)', 'Entregador::d
 //admin
 $routes->get('/admin/pdf/(:num)/id/(:num)/mes/(:num)/(:num)/download', 'Admin::download/$1/$2/$3/$4');
 $routes->get('/admin', 'Admin::adminv');
+$routes->post('/admin/login', 'Admin::login');
+
 $routes->post('/admins', 'Admin::admin');
 //api
 $routes->post('/econfirmentregadorapi', 'Entregador::confirmentregadorapi');

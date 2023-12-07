@@ -6,9 +6,41 @@ use TCPDF;
 
 class Admin extends BaseController
 {
+    public function isAdmin()
+    {
+        if(session()->get('user') && session()->get('pass')){
+            $db = \Config\Database::connect();
+            $select = $db->table('admin')->where('user', session()->get('user'))->where('pass', session()->get('pass'))->get()->getRow();
+            if($select){
+                return true;
+            }else{
+                return false;
+            }
+        }else{
+            return false;
+        }
+    }
+    public function login()
+    {
+        $user = $_POST['user'];
+        $pass = hash('sha256',$_POST['password']);
+        $db = \Config\Database::connect();
+            $select = $db->table('admin')->where('user', $user)->where('pass', $pass)->get()->getRow();
+            if($select){
+                session()->set('user', $user);
+                session()->set('pass', $pass);
+                return '1';
+            }else{
+                return '0';
+            }
+    }
     public function adminv()
     {
-        return view('admin');
+        if($this->isAdmin()){
+            return view('admin');
+        }else{
+            return view('adminLogin');
+        }
     }
     public function admin()
     {

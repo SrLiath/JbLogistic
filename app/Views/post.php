@@ -109,7 +109,7 @@ form.addEventListener('keydown', function(event) {
       },
       success: function(response) {
         alert(response);
-      //  window.location.href = "<?= base_url('painel'); ?>";
+       window.location.href = "<?= base_url('painel'); ?>";
       },
       error: function(xhr, status, error) {
         alert('Ocorreu um erro ao inserir o pedido. Tente novamente mais tarde.');
