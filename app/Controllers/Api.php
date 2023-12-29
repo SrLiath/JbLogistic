@@ -44,7 +44,7 @@ class Api extends BaseController
                 $cpf = $_POST['cpf'];
                 $nome = $_POST['nome'];
                 $email = $_POST['email'];
-                $pass = hash('sha3-256', $_POST['pass']);
+                $pass = password_hash($_POST['pass'], PASSWORD_BCRYPT);
 
                 if ($cpf == "" || $nome == "" || $email == "" || $pass == "") {
                     echo "preencha corretamente";
@@ -73,8 +73,8 @@ class Api extends BaseController
                     // Verifica o formato do CPF usando regex
                     elseif (!preg_match('/^\d{3}\.\d{3}\.\d{3}\-\d{2}$/', $cpf)) {
                         echo "O CPF informado não é válido";
-                    } elseif (strlen($pass) < 8) {
-                        echo "A senha deve ter pelo menos 8 caracteres";
+                    } elseif (strlen($pass) < 1) {
+                        echo "Escolha uma senha";
                     } else {
                         // Insere o usuário na tabela de usuários
                         $sql = 'INSERT INTO usuarios (cpf, nome, email, senha, telefone) values (?,?,?,?,?);';
@@ -86,18 +86,20 @@ class Api extends BaseController
 
 
                 $db = \Config\Database::connect();
-                $password = hash('sha3-256', $_POST['password']);
+                $password = $_POST['password'];
                 $elogin = $_POST['elogin'];
                 if ($elogin == "" || $password == "") {
                     echo "preencha corretamente";
                 } else {
-                    $login = $db->table('usuarios')->where('email', $elogin)->where('senha', $password)->countAllResults();
+                    $login = $db->table('usuarios')->where('email', $elogin)->countAllResults();
 
 
                     if ($login == 1) {
+                        
                         $usuario = $db->table('usuarios')
-                          ->getWhere(['email' => $elogin, 'senha' => $password])
+                          ->getWhere(['email' => $elogin])
                           ->getRow();
+                    if (password_verify($password, $usuario->senha)) {
                         $eid = $usuario->id;
                         $datasesi = [
                         'eid' => $eid,
@@ -106,12 +108,15 @@ class Api extends BaseController
                         ];
                         session()->set($datasesi);
                         echo "logado";
+                    }
                     } else {
-                        $logine = $db->table('entregadores')->where('email', $elogin)->where('senha', $password)->countAllResults();
+                        $logine = $db->table('entregadores')->where('email', $elogin)->countAllResults();
                         if ($logine == 1) {
                             $entregador = $db->table('entregadores')
-                            ->getWhere(['email' => $elogin, 'senha' => $password])
+                            ->getWhere(['email' => $elogin])
                             ->getRow();
+                    if (password_verify($password, $entregador->senha)) {
+
                             $entid = $entregador->id;
                             $datasesi = [
                               'entid' => $entid,
@@ -120,15 +125,18 @@ class Api extends BaseController
                               ];
                             session()->set($datasesi);
                             echo "entregador";
+                    }
                         } else {
 
                             echo "Email ou senha invalidos";
                         }
+
                     }
                 }
 
             }
         }
+        die();
     }
 
     public function apipost()
@@ -138,16 +146,13 @@ class Api extends BaseController
             $eid = session()->get('eid');
             $elogin = session()->get('elogin');
             $password = session()->get('password');
-            $login = $db->table('usuarios')->where('email', $elogin)->where('senha', $password)->where('id', $eid)->countAllResults();
+            $login = $db->table('usuarios')->where('email', $elogin)->where('id', $eid)->countAllResults();
 
 
             if ($login == 1) {
+                $loginCheck = $db->table('usuarios')->where('email', $elogin)->where('id', $eid)->get()->getRow();
+                if(password_verify($password, $loginCheck->senha)){
 
-
-
-
-
-                // Conexão com o banco de dados
                 $db = \Config\Database::connect();
 
                 // Captura dos valores enviados via POST
@@ -238,9 +243,10 @@ class Api extends BaseController
                         'message' => 'Pedido cadastrado com sucesso!'
                     ];
                     echo "Inserido com sucesso";
+                }}else{
+                    die();
                 }
             } else {
-                header("Location: " . base_url('login'));
                 die();
             }
         }
@@ -253,17 +259,19 @@ class Api extends BaseController
             $elogin = session()->get('elogin');
             $password = session()->get('password');
             if ($eid == "" || $elogin == "" || $password == "") {
-                header("Location: " . base_url('login'));
                 die();
-            } else {
-                $login = $db->table('usuarios')->where('email', $elogin)->where('senha', $password)->where('id', $eid)->countAllResults();
+                } else {
+                $login = $db->table('usuarios')->where('email', $elogin)->where('id', $eid)->countAllResults();
 
                 if ($login == 1) {
+                    $loginCheck = $db->table('usuarios')->where('email', $elogin)->where('id', $eid)->get()->getRow();
+                if(password_verify($password, $loginCheck->senha)){
+                    
+
                     $pedidos = $db->table('pedidos')->where('id_usuario', $eid)->where('status', 'entregue')->get()->getResult();
 
                     echo json_encode($pedidos);
-                } else {
-                    header("Location: " . base_url('login'));
+                }else{die();}} else {
                     die();
                 }
             }
@@ -278,21 +286,23 @@ class Api extends BaseController
             $elogin = session()->get('elogin');
             $password = session()->get('password'); 
             if ($eid == "" || $elogin == "" || $password == "") {die();}
-            $login = $db->table('usuarios')->where('email', $elogin)->where('senha', $password)->where('id', $eid)->countAllResults();
+            $login = $db->table('usuarios')->where('email', $elogin)->where('id', $eid)->countAllResults();
 
 
             if ($login == 1) {
+            $loginCheck = $db->table('usuarios')->where('email', $elogin)->where('id', $eid)->get()->getRow();
+             if(password_verify($_POST['senha'], $loginCheck->senha)){
                 if(isset($_POST['choice'])){
                     $pass = $_POST['choice'];
                     #aqui verifica se foi selecionado alterar a senha
                     if ($pass === "pass"){
-                        $senha = hash('sha3-256', $_POST['senha']);
-                        $newsenha = hash('sha3-256', $_POST['newsenha']);
-                       $check = $db->table('usuarios')->where('email', $elogin)->where('senha', $senha)->countAllResults();
-                       if($check == 1){ 
+                        $senha = $_POST['senha'];
+                        $newsenha = password_hash($_POST['newsenha'], PASSWORD_BCRYPT);
+                        $check = $db->table('usuarios')->where('email', $elogin)->get()->getRow();
+                       if(password_verify($senha, $check->senha)){ 
                        $builder = $db->table('usuarios');
                         $data = ['senha' => $newsenha];
-                        $builder->where('senha', $senha);
+                        $builder->where('email', $elogin);
                         $builder->update($data);
                         echo "alterado com sucesso";}
                         else {echo "senha incorreta";};
@@ -307,7 +317,8 @@ class Api extends BaseController
                     $id = $_POST['id'];
                     $db->query("UPDATE pedidos SET status = 'cancelado' WHERE id = ?", [$id]);
                 }
-            }
+            }else {echo "senha incorreta";};
+        }
         }
     }
 

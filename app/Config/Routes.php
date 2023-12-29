@@ -20,6 +20,8 @@ $routes->post('/admin/login', 'Admin::login');
 
 $routes->post('/admins', 'Admin::admin');
 //api
+$routes->post('/email', 'Home::email');
+
 $routes->post('/econfirmentregadorapi', 'Entregador::confirmentregadorapi');
 $routes->post('/declineentregadorapi', 'Entregador::declineentregadorapi');
 $routes->post('/coletaconfirmapi', 'Entregador::coletaconfirmapi');

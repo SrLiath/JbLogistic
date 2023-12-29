@@ -230,9 +230,6 @@ function redirect() {
     
     // Quando o botão de envio do modal é clicado, verifica a senha
     $('#btnEnviar').click(function() {
-   
-
-      const form = document.querySelector('form');
       var senha = $('#senha').val();
       var newsenha = $('#newsenha').val();
       var resenha = $('#resenha').val();

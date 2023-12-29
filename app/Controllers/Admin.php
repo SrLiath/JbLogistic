@@ -10,9 +10,12 @@ class Admin extends BaseController
     {
         if(session()->get('user') && session()->get('pass')){
             $db = \Config\Database::connect();
-            $select = $db->table('admin')->where('user', session()->get('user'))->where('pass', session()->get('pass'))->get()->getRow();
+            $select = $db->table('admin')->where('user', session()->get('user'))->get()->getRow();
             if($select){
-                return true;
+                if(password_verify(session()->get('pass'), $select->pass)){
+                return true;}else{
+                    return false;
+                }
             }else{
                 return false;
             }
@@ -23,13 +26,18 @@ class Admin extends BaseController
     public function login()
     {
         $user = $_POST['user'];
-        $pass = hash('sha256',$_POST['password']);
+        $pass = $_POST['pass'];
+
         $db = \Config\Database::connect();
-            $select = $db->table('admin')->where('user', $user)->where('pass', $pass)->get()->getRow();
+            $select = $db->table('admin')->where('user', $user)->get()->getRow();
             if($select){
-                session()->set('user', $user);
-                session()->set('pass', $pass);
-                return '1';
+                if (password_verify($pass, $select->pass)) {
+                    session()->set('user', $user);
+                    session()->set('pass', $pass);
+                    return '1';
+                }else{
+                    return '0';
+                }
             }else{
                 return '0';
             }
@@ -48,6 +56,7 @@ class Admin extends BaseController
 
 
         $db = \Config\Database::connect();
+        if($this->isAdmin()){
 
         $id = $_POST['id'];
         $novoStatus = $_POST['status'];
@@ -55,12 +64,14 @@ class Admin extends BaseController
         $db->query("UPDATE pedidos SET status = '$novoStatus' WHERE id = $id");
 
 
-
+        }
+        die();
 
     }
     public function entregador()
     {
 
+        if($this->isAdmin()){
 
         $db = \Config\Database::connect();
 
@@ -69,7 +80,7 @@ class Admin extends BaseController
             // Obtém os valores do formulário
             $nome = $_POST['nome'];
             $email = $_POST['email'];
-            $senha = hash('sha3-256', $_POST['senha']);
+            $senha = password_hash($_POST['senha'], PASSWORD_BCRYPT);
             $cpf = $_POST['cpf'];
             $veiculo = $_POST['veiculo'];
             $placa = $_POST['placa'];
@@ -107,9 +118,13 @@ class Admin extends BaseController
 
         }
     }
+    die();
+    }
 
 public function apicon()
 {
+    if($this->isAdmin()){
+
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $db = \Config\Database::connect();
         $builder = $db->table('pedidos');
@@ -126,8 +141,12 @@ public function apicon()
 
     }
 }
+die();
+}
   public function confirmentregadorapi()
   {
+    if($this->isAdmin()){
+
       $db = \Config\Database::connect();
       if (isset($_POST['choice'])){
       $check = $_POST['choice'];
@@ -176,9 +195,13 @@ public function apicon()
 
       echo "atribuido";
   }
+  die();
+}
 
   public function download($choice, $id, $mes)
   {
+    if($this->isAdmin()){
+
       if ($choice==1) {
 
 
@@ -319,4 +342,6 @@ public function apicon()
 
 
   }
+  die();
+}
 }

@@ -40,7 +40,6 @@
         <li class="has-submenu"><a href="<?= base_Url('login'); ?>" class="external">Postar</a>
           <ul class="sub-menu">
             <li><a href="<?= base_Url('login'); ?>" class= "external">Login</a></li>
-            <li><a href="#section2" >Como fazer?</a></li>
           </ul>
         </li>
       </ul>
@@ -77,7 +76,7 @@
               </div>
               <div class="content-hide">
                 <p>Preencha os campos conforme solicitado e adicione o seu currículo</p>
-                <a><div class="scroll-to-section" align="center">Trabalhe conosco</div></a>
+                <div class="scroll-to-section"  ><a href="#section6">Trabalhe conosco</a></div>
             </div>
             </div>
           </div>
@@ -115,33 +114,17 @@
   <section class="section why-us" data-section="section2">
     <div class="container">
     <div>
-          <div style="color: white; text-align:center;">
+          <div class="conteudo" style="color: white; text-align:center;">
           <hr>
             <h3>Quem somos?</bold></h3>
             <p>Olá, somos a JB Logística, a parceria ideal para o seu negócio. Nosso time é comprometido em 
-proporcionar o melhor para você. 
-A Nossa Missão é fornecer a melhor experiência com entrega para os consumidores e lojistas. 
-A Visão é tornar as entregas mais fáceis e acessíveis para todas as pessoas em todos os 
-lugares. 
-O Objetivo é ampliar a malha de entregas, mantendo o alto nível de eficiência e inovando para 
+proporcionar o melhor para você. </p><p>
+A <strong>Nossa Missão</strong> é fornecer a melhor experiência com entrega para os consumidores e lojistas. </p><p>
+A <strong>Visão</strong> é tornar as entregas mais fáceis e acessíveis para todas as pessoas em todos os 
+lugares. </p><p>
+O <strong>Objetivo</strong> é ampliar a malha de entregas, mantendo o alto nível de eficiência e inovando para 
 garantir a qualidade. 
-Além de sermos especialistas em logística, também somos consumidores. Sabemos como 
-entregar da melhor forma e mais rápido para você. 
-Sabemos que vender online pode ser um desafio e que o frete pode influenciar bastante na 
-sua decisão de compra, e é por isso que estamos aqui para ajudar. 
-Também entendemos que muitas vezes as opções de frete disponíveis não oferecem um valor 
-competitivo para uma boa experiência de compra. Por isso, trabalhamos diariamente com 
-todo o nosso conhecimento e habilidade para oferecer a melhor solução de entrega para você. 
-Sem contrato de adesão, sem limite mínimo de envios e sem burocracia, frete rápido, coleta 
-diária na porta do seu estabelecimento… a gente acredita no seu negócio e você acredita na 
-gente? 
-Rastreamento automatizado, armazenagem logística, acesso ao portal do cliente, API de 
-integração com possibilidades de cálculo do frete e prazo de entrega para o seu cliente simular 
-a melhor condição de compra. Não tem taxa de mensalidades e não tem limites de envio! 
-Quer oferecer para o seu cliente a melhor experiência de entrega? 
-Executamos coletas e entregas porta a porta, com serviços customizados, criados para atender 
-as diversas necessidades de nossos clientes. 
-Transportadora para e-commerce, lojas, distribuidoras, entre outros.</p>
+</p>
           </div>
         </div>
       <div class="row">
@@ -150,13 +133,9 @@ Transportadora para e-commerce, lojas, distribuidoras, entre outros.</p>
             <h2>Nos oferecemos:</h2>
           </div>
         </div>
-        <div class="col-md-12">
-          <div id='tabs'>
-            <ul>
-              <li><a href='#tabs-1'>Transporte seguro</a></li>
-              <li><a href='#tabs-2'>velocidade e eficiencia</a></li>
-              <li><a href='#tabs-3'>Segurança de suas informações</a></li>
-            </ul>
+        <div >
+          <div class='tabs'>
+
             <section class='tabs-content'>
               <article id='tabs-1'>
                 <div class="row">
@@ -164,30 +143,19 @@ Transportadora para e-commerce, lojas, distribuidoras, entre outros.</p>
                     <img src="assets/images/5c.jpeg" alt="">
                   </div>
                   <div class="col-md-6">
-                    <h4>Segurança</h4>
-                    <a href="<?= base_url('login') ?>" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Contratar</a>
-                  </div>
-                </div>
-              </article>
-              <article id='tabs-2'>
-                <div class="row">
-                  <div class="col-md-6">
-                    <img src="assets/images/2c.jpg" alt="">
-                  </div>
-                  <div class="col-md-6">
-                    <h4>Velocidade</h4>
-                    <a href="<?= base_url('login') ?>" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Contratar</a>
-                  </div>
-                </div>
-              </article>
-              <article id='tabs-3'>
-                <div class="row">
-                  <div class="col-md-6">
-                    <img src="assets/images/3c.jpg" alt="">
-                  </div>
-                  <div class="col-md-6">
-                    <h4>Informações</h4>
-                    <a href="<?= base_url('login') ?>" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Contratar</a>
+                    <h4 style="    margin-top: 0px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #fff;
+    margin-bottom: 30px;">Transporte seguro,velocidade, eficiencia e Segurança de suas informações</h4>
+<div style="color: white;">
+    <p>Rastreamento automatizado, armazenagem logística, acesso ao portal do cliente, API de integração com possibilidades de cálculo do frete e prazo de entrega para o seu cliente simular a melhor condição de compra. Não tem taxa de mensalidades e não tem limites de envio!</p>
+    <p>Quer oferecer para o seu cliente a melhor experiência de entrega?</p>
+    <p>executamos coletas e entregas porta a porta, com serviços customizados, criados para atender as diversas necessidades de nossos clientes.</p>
+    <p>Transportadora para e-commerce, lojas, distribuidoras, entre outros.</p>
+    </div>
+    <a href="<?= base_url('login') ?>" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Contratar</a>
                   </div>
                 </div>
               </article>
@@ -205,8 +173,8 @@ Transportadora para e-commerce, lojas, distribuidoras, entre outros.</p>
           <div class="left-content">
             <h4>Se você vai entregar ou buscar <em>um pacote na mesma região</em></bold></h4>
             <p>Além de sermos especialistas em logística, também somos consumidores. Sabemos como entregar da melhor forma e mais rápido para você.</p>
-            <p>Sabemos que vencer online pode ser um desafio e que o frete pode influenciar bastante na sua decisão de compra, e é por isso que estamos aqui para ajudar.</p>
-            <p>Também entendemos que muitas vezes as opções de frete disponíveis não oferecem um valor competitivo para uma boa exxperiência de compra, por isso, trabalhamos diariamente com todo o nosso conhecimento e habilidade para oferecer a melhor solução de entrega para você.</p>
+            <p>Sabemos que vender online pode ser um desafio e que o frete pode influenciar bastante na sua decisão de compra, e é por isso que estamos aqui para ajudar.</p>
+            <p>Também entendemos que muitas vezes as opções de frete disponíveis não oferecem um valor competitivo para uma boa experiência de compra, por isso, trabalhamos diariamente com todo o nosso conhecimento e habilidade para oferecer a melhor solução de entrega para você.</p>
             <p><strong>Sem contrato de adesão</strong>, sem limite mínimo de envios e sem burocracia, frete rápido, coleta diária na porta do seu estabelecimento... <strong>a gente acredita no seu negócio e você acredita na gente?</strong></p>
           </div>
         </div>
@@ -288,7 +256,6 @@ Transportadora para e-commerce, lojas, distribuidoras, entre outros.</p>
   <!-- Scripts -->
   <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <script src="assets/js/isotope.min.js"></script>
     <script src="assets/js/owl-carousel.js"></script>
@@ -298,6 +265,24 @@ Transportadora para e-commerce, lojas, distribuidoras, entre outros.</p>
     <script src="assets/js/slick-slider.js"></script>
     <script src="assets/js/custom.js"></script>
     <script>
+      $('#contact').submit(function(e) {
+        e.preventDefault(); 
+        var formData = new FormData(this);
+        $.ajax({
+            url: '<?= base_url('email') ?>', 
+            type: 'POST',
+            data: formData,
+            contentType: false,
+            processData: false,
+            success: function(response) {
+                alert('Enviado com sucesso');
+                console.log(response)
+            },
+            error: function(error) {
+                console.error(error);
+            }
+        });
+    });
         //according to loftblog tut
         $('.nav li:first').addClass('active');
 

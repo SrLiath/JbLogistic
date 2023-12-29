@@ -17,14 +17,16 @@ class Entregador extends BaseController
         } else {
             $db = \Config\Database::connect();
             $le = "0";
-            // Usando o Query Builder para verificar o login do entregador
             $logine = $db->table('entregadores')
                         ->where('email', $elogin)
-                        ->where('senha', $password)
                         ->countAllResults();
 
             if ($logine == 1) {
-                // Usando o Query Builder para verificar se o entregador está online
+                $checke = $db->table('entregadores')
+                ->where('email', $elogin)
+                ->get()->getRow();
+                if(password_verify($password, $checke->senha)){
+
                 $entregador = $db->table('entregadores')
                                ->select('online')
                                ->where('id', $entid)
@@ -32,7 +34,6 @@ class Entregador extends BaseController
                                ->getRow();
 
                 if ($entregador->online) {
-                    // Usando o Query Builder para buscar pedidos do entregador
                     $pedidos = $db->table('pedidos')
                                ->select('pedidos.*, usuarios.nome as nome_usuario')
                                ->join('usuarios', 'pedidos.id_usuario = usuarios.id')
@@ -78,6 +79,7 @@ class Entregador extends BaseController
                     header("Location: " . base_url('login'));
                     die();
                 }
+            }
             } else {
                 header("Location: " . base_url('login'));
                 die();
@@ -97,23 +99,20 @@ public function confirmentregadorapi()
         die();
     } else {
         $db = \Config\Database::connect();
-        $logine = $db->table('entregadores')->where('email', $elogin)->where('senha', $password)->countAllResults();
+        $logine = $db->table('entregadores')->where('email', $elogin)->countAllResults();
         if ($logine == 1) {
-
+            $logineCheck = $db->table('entregadores')->where('email', $elogin)->get()->getRow();
+            if(password_verify($_POST['senha'], $logineCheck->senha)){
             if(isset($_POST['choice'])){
                 $pass = $_POST['choice'];
                 #aqui verifica se foi selecionado alterar a senha
                 if ($pass === "pass"){
-                    $senha = hash('sha3-256', $_POST['senha']);
-                    $newsenha = hash('sha3-256', $_POST['newsenha']);
-                   $check = $db->table('entregadores')->where('email', $elogin)->where('senha', $senha)->countAllResults();
-                   if($check == 1){ 
+                    $newsenha = password_hash($_POST['newsenha'], PASSWORD_BCRYPT);
                    $builder = $db->table('entregadores');
                     $data = ['senha' => $newsenha];
                     $builder->where('senha', $senha);
                     $builder->update($data);
-                    echo "alterado com sucesso";}
-                    else {echo "senha incorreta";};
+                    echo "alterado com sucesso";
                     die();
 
                 }
@@ -144,7 +143,8 @@ public function confirmentregadorapi()
 
 
 
-
+        }
+        die();
         } else {
             die();
         }
@@ -160,8 +160,12 @@ public function download($id, $mes, $ano)
         die();
     } else {
         $db = \Config\Database::connect();
-        $logine = $db->table('entregadores')->where('email', $elogin)->where('senha', $password)->countAllResults();
+        $logine = $db->table('entregadores')->where('email', $elogin)->countAllResults();
         if ($logine == 1) {
+            $checke = $db->table('entregadores')
+            ->where('email', $elogin)
+            ->get()->getRow();
+            if(password_verify($password, $checke->senha)){
             if ($entid == $id){
         $db = \Config\Database::connect();
         $id_usuario = $entid;
@@ -225,7 +229,7 @@ public function download($id, $mes, $ano)
 
         // Gera o PDF e o exibe na tela
         $pdf->Output('pedidos_entregador_mes_' . $mes . '.pdf', 'D');
-    }else{die();}}else{die();}}
+    }else{die();}}}else{die();}}
 
 
 
@@ -240,11 +244,14 @@ public function download($id, $mes, $ano)
             die();
         } else {
             $db = \Config\Database::connect();
-            $logine = $db->table('entregadores')->where('email', $elogin)->where('senha', $password)->countAllResults();
+            $logine = $db->table('entregadores')->where('email', $elogin)->countAllResults();
             if ($logine == 1) {
-    
+                $checke = $db->table('entregadores')
+                ->where('email', $elogin)
+                ->get()->getRow();
+                if(password_verify($password, $checke->senha)){
                 $db->query("UPDATE pedidos SET vision = REPLACE(vision, ';" . $entid . ";', ';')");
-    
+                }
             } else {
                 die();
             }
@@ -260,8 +267,12 @@ public function download($id, $mes, $ano)
             die();
         } else {
             $db = \Config\Database::connect();
-            $logine = $db->table('entregadores')->where('email', $elogin)->where('senha', $password)->countAllResults();
+            $logine = $db->table('entregadores')->where('email', $elogin)->countAllResults();
             if ($logine == 1) {
+                $checke = $db->table('entregadores')
+                ->where('email', $elogin)
+                ->get()->getRow();
+                if(password_verify($password, $checke->senha)){
                 $pedidoId = $_POST['pedidoId'];
                 $nome = $_POST['nome'];
                 $documento = $_POST['documento'];
@@ -276,7 +287,7 @@ public function download($id, $mes, $ano)
                 $db->table('pedidos')->where('id', $pedidoId)->update($data);
                 echo "okay";
 
-
+            }
             } else {
                 die();
             }
