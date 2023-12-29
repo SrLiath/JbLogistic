@@ -17,7 +17,7 @@ class App extends BaseConfig
      *
      *    http://example.com/
      */
-    public string $baseURL = 'https://jblogistic.com.br/';
+    public string $baseURL = 'http://localhost/jb/public/';
 
     /**
      * Allowed Hostnames in the Site URL other than the hostname in the baseURL.

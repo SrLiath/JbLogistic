@@ -26,10 +26,13 @@ class Admin extends BaseController
     public function login()
     {
         $user = $_POST['user'];
-        $pass = $_POST['pass'];
+        $pass = $_POST['password'];
 
         $db = \Config\Database::connect();
             $select = $db->table('admin')->where('user', $user)->get()->getRow();
+            if(!isset($select)){
+                return '0';
+            }
             if($select){
                 if (password_verify($pass, $select->pass)) {
                     session()->set('user', $user);
@@ -77,7 +80,6 @@ class Admin extends BaseController
 
         // Verifica se foi enviado um formulário
         if (isset($_POST['nome']) && isset($_POST['email']) && isset($_POST['senha']) && isset($_POST['cpf'])) {
-            // Obtém os valores do formulário
             $nome = $_POST['nome'];
             $email = $_POST['email'];
             $senha = password_hash($_POST['senha'], PASSWORD_BCRYPT);
